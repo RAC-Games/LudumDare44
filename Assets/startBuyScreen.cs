@@ -6,12 +6,15 @@ using UnityEngine.UI;
 
 public class startBuyScreen : MonoBehaviour
 {
-    public Image image;
+    public GameObject imageHero;
+    public GameObject imageVendor;
     public Text textField;
     public GameObject panel;
     public GameObject dropDown;
     public DialogSO dialog;
+    public GameObject buyButtons;
 
+    Collider ColliderObj;
     Coroutine typewriterRoutine;
     bool waitForSpace = false;
     // Start is called before the first frame update
@@ -34,8 +37,16 @@ public class startBuyScreen : MonoBehaviour
                 }
                 else
                 {
-                    waitForSpace = false;
-                    dropDown.SetActive(true);
+                    if (dialog.endWithBuyScreen)
+                    {
+                        buyButtons.SetActive(true);
+                        waitForSpace = false;
+                        dropDown.SetActive(true);
+                    }
+                    else {
+                        disableDialog();
+                    }
+                    
                 }
             }
         }
@@ -45,10 +56,11 @@ public class startBuyScreen : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            ColliderObj = other;
             other.GetComponentInParent<movement>().enabled = false;
             other.GetComponentInParent<PlayerAttack>().enabled = false;
+            dialog.currentSpeakerIndex = 0;
 
-            
             panel.SetActive(true);
 
             StartDialog();
@@ -75,6 +87,15 @@ public class startBuyScreen : MonoBehaviour
         var charArray = textString.ToCharArray();
         var index = 0;
         textField.text = "";
+        if (turnOf == TurnOf.Player)
+        {
+            imageHero.SetActive(true);
+            imageVendor.SetActive(false);
+        }
+        else {
+            imageHero.SetActive(false);
+            imageVendor.SetActive(true);
+        }
 
         while (index < charArray.Length)
         {
@@ -85,5 +106,20 @@ public class startBuyScreen : MonoBehaviour
         dialog.currentSpeakerIndex++;
         waitForSpace = true;
         dropDown.SetActive(true);
+    }
+
+    public void BuyKey() {
+        disableDialog();
+    }
+    public void BuyCooldown() {
+        disableDialog();
+    }
+
+    void disableDialog() {
+        panel.SetActive(false);
+        dropDown.SetActive(false);
+        buyButtons.SetActive(false);
+        ColliderObj.GetComponentInParent<movement>().enabled = true;
+        ColliderObj.GetComponentInParent<PlayerAttack>().enabled = true;
     }
 }
