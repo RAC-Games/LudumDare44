@@ -6,6 +6,7 @@ public class PlayerHealth : MonoBehaviour
 {
 
     public Health healthSO;
+    
 
     private void Start()
     {
@@ -14,7 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Projectile"))
+        if (collision.gameObject.CompareTag("Projectile") && !(collision.gameObject.GetComponent<damage>().isFromPlayer))
         {
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
             print(dmg);

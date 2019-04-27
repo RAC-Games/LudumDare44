@@ -4708,7 +4708,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6655026222049867629}
   - component: {fileID: 4561199705125105232}
-  - component: {fileID: 4022612333874698178}
   m_Layer: 0
   m_Name: MagicAttack
   m_TagString: Projectile
@@ -4724,8 +4723,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6655026222049867628}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.400545, y: 7.857607, z: -46.21}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 12.400545, y: 7.857607, z: -45.95}
+  m_LocalScale: {x: 1, y: 1, z: 0.81823}
   m_Children:
   - {fileID: 6655026222473732154}
   - {fileID: 6655026221608708750}
@@ -4748,19 +4747,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &4022612333874698178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6655026222049867628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 1
 --- !u!1 &6655026222473732153
 GameObject:
   m_ObjectHideFlags: 0
@@ -4774,6 +4760,7 @@ GameObject:
   - component: {fileID: 6655026222473732157}
   - component: {fileID: 6655026222473732156}
   - component: {fileID: 6655026222473732155}
+  - component: {fileID: 2145562110093956553}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -4789,8 +4776,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6655026222473732153}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1.9345, y: -0.29947, z: -0.1}
-  m_LocalScale: {x: 0.7096881, y: 0.5040836, z: 0.2810646}
+  m_LocalPosition: {x: 1.9132, y: -0.30088, z: 0.47}
+  m_LocalScale: {x: 0.70259124, y: 0.36138043, z: 0.27825394}
   m_Children: []
   m_Father: {fileID: 6655026222049867629}
   m_RootOrder: 0
@@ -4810,7 +4797,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6655026222473732153}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -5669,3 +5656,17 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 0}
+--- !u!114 &2145562110093956553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655026222473732153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
+  isFromPlayer: 0

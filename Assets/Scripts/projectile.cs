@@ -14,4 +14,14 @@ public class projectile : MonoBehaviour
         rb.AddForce(speed*(targetPosition),ForceMode.Impulse);
         Destroy(instance, 1);
     }
+
+    public void playerShoot(Vector3 startPosition, Vector3 targetPosition, GameObject gameObject, float speed = 50)
+    {
+        GameObject instance = Instantiate(gameObject, startPosition, transform.rotation);
+        rb = instance.GetComponent<Rigidbody>();
+        rb.AddForce(speed * (targetPosition), ForceMode.Impulse);
+        instance.GetComponent<damage>().isFromPlayer = true;
+        Destroy(instance, 1);
+
+    }
 }
