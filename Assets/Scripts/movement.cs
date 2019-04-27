@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
@@ -14,11 +16,27 @@ public class movement : MonoBehaviour
 
     public float speed;
     // Start is called before the first frame update
+    Vector3 offset;
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+        var memory = GameObject.FindGameObjectWithTag("memory");
+        var spawName = memory.GetComponent<transitionMemory>().nextDoor;
+        var door = GameObject.Find(spawName);
+        transform.position = door.transform.position;
+    }
+
     void Start()
     {
+        offset =  camera.transform.position- transform.position;
         Vector2 oldInput = new Vector2(0, 0);
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(camera.gameObject);
     }
 
     // Update is called once per frame
@@ -34,11 +52,15 @@ public class movement : MonoBehaviour
         RaycastHit hit;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
         var mask = LayerMask.GetMask("ground");
-        if (Physics.Raycast(ray, out hit, mask))
+        if (Physics.Raycast(ray, out hit))
         {
             if (!hit.transform.CompareTag("Player"))
             {
+                if (mouseHit!=null)
+                {
+
                 mouseHit.transform.position = hit.point;
+                }
                 transform.LookAt(new Vector3(hit.point.x,transform.position.y,hit.point.z));
             }
             
@@ -46,4 +68,12 @@ public class movement : MonoBehaviour
 
 
     }
+
+    void LateUpdate()
+    {
+        // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
+        camera.transform.position = transform.position + offset;
+    }
+
+    
 }

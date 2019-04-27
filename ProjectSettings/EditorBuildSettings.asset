@@ -4,5 +4,62 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Hub_Versions/Hub_1.unity
+    guid: 9fb5b2019f3a7d94bb1005d206a6de7e
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level_1_R_1.unity
+    guid: 1186936a9afa7dc4a8e700102e985557
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level_1_R_2.unity
+    guid: 6d74eff5fb42e6044962ce37a26cebd8
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level_1_R_3.unity
+    guid: 9cafd92920e22aa4aac6a13a1498e0fa
+  - enabled: 1
+    path: Assets/Scenes/Level1/Level_1_R_4.unity
+    guid: e6b5f9fd472ce9745a6bfdedc7c372f3
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level_2_R_1.unity
+    guid: 17263ae3440519647998b94d1005dd75
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level_2_R_2.unity
+    guid: 73425c3b57866ad4eb5a19a45b0d87e6
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level_2_R_3.unity
+    guid: f3be400d061e8774ebea9ace72e23e73
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level_2_R_4.unity
+    guid: e3768b80e56a1034b8c44f5d438aa590
+  - enabled: 1
+    path: Assets/Scenes/Level2/Level_2_R_5.unity
+    guid: d8a67fa65db218b409bd709d286d114a
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level_3_R_1.unity
+    guid: d095c4d3c2236b049a5cec395c33fbd7
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level_3_R_2.unity
+    guid: 3ef557dce0fdf314cb76180a0d3b56d7
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level_3_R_3.unity
+    guid: fdc6e6b8247e1e9418cac6daf6de1217
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level_3_R_4.unity
+    guid: 13375479effcf8b4e807b6549cd41169
+  - enabled: 1
+    path: Assets/Scenes/Level3/Level_3_R_5.unity
+    guid: 7caf559f2a01517469c47bdad454801f
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level_4_R_1.unity
+    guid: c7f8dabb58bb07b4e855f9c307884f81
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level_4_R_2.unity
+    guid: b9fb14d40c64b2641a227a2ac82b74f8
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level_4_R_3.unity
+    guid: f348e6a1112d97c4d9265d78d3f904a6
+  - enabled: 1
+    path: Assets/Scenes/Level4/Level_4_R_4.unity
+    guid: d3ba478e3aa51bf40aebdfcb159fe726
   m_configObjects: {}
