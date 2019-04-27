@@ -404,6 +404,11 @@ PrefabInstance:
       propertyPath: health
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5730644828178152315, guid: f45ce82d65bf5384b809245e42e267b8,
+        type: 3}
+      propertyPath: alternator
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4222020915758495625, guid: f45ce82d65bf5384b809245e42e267b8,
         type: 3}
       propertyPath: m_Enabled
