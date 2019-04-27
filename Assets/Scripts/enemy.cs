@@ -25,12 +25,12 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dead)
+        {
+            return;
+        }
         if (health < 0)
         {
-            if (dead)
-            {
-                return;
-            }
             dead = true;
             agent.isStopped = false;
             var enemyAttack = GetComponent<EnemyAttack>();
