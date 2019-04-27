@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2049698874425747094}
   - component: {fileID: 2049698874425747089}
   - component: {fileID: 4903735042177679630}
-  - component: {fileID: 7979902170743867157}
+  - component: {fileID: 8428950481115217942}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: Projectile
@@ -207,7 +207,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &7979902170743867157
+--- !u!114 &8428950481115217942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -216,10 +216,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2049698874425747095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
+  m_Script: {fileID: 11500000, guid: acaa4444d3e54094786a6bd96e7514ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 3
+  duration: 0.25
+  magnitude: 0.125
 --- !u!1001 &2208637823084776330
 PrefabInstance:
   m_ObjectHideFlags: 0
