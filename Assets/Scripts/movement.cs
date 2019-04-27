@@ -18,6 +18,7 @@ public class movement : MonoBehaviour
     {
         Vector2 oldInput = new Vector2(0, 0);
         rb = GetComponent<Rigidbody>();
+        DontDestroyOnLoad(this.gameObject);
     }
 
     // Update is called once per frame
