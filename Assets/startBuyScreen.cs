@@ -9,13 +9,15 @@ public class startBuyScreen : MonoBehaviour
     public Image image;
     public Text textField;
     public GameObject panel;
+    public GameObject dropDown;
+    public DialogSO dialog;
 
     Coroutine typewriterRoutine;
     bool waitForSpace = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        dialog.currentSpeakerIndex = 0;
     }
 
     // Update is called once per frame
@@ -23,7 +25,19 @@ public class startBuyScreen : MonoBehaviour
     {
         if (waitForSpace)
         {
-
+            if (Input.anyKey)
+            {
+                waitForSpace = false;
+                if (dialog.currentSpeakerIndex<dialog.dialogList.Count)
+                {
+                    StartDialog();
+                }
+                else
+                {
+                    waitForSpace = false;
+                    dropDown.SetActive(true);
+                }
+            }
         }
     }
 
@@ -34,29 +48,33 @@ public class startBuyScreen : MonoBehaviour
             other.GetComponentInParent<movement>().enabled = false;
             other.GetComponentInParent<PlayerAttack>().enabled = false;
 
-            textField.text = "";
+            
             panel.SetActive(true);
 
-            typewriterRoutine = StartCoroutine(typeText("Hallo ich bims eins Schreibmaschine! Willst du etwas kaufen mein Freund? Guckst du hier..."));
-            print("lol");
+            StartDialog();
         }
+    }
+
+    void StartDialog() {
+        typewriterRoutine = StartCoroutine(typeText(dialog.dialogList[dialog.currentSpeakerIndex].text, dialog.dialogList[dialog.currentSpeakerIndex].turnOf));
     }
     
     private void OnTriggerExit(Collider other)
     {
-        StopCoroutine(typewriterRoutine);
-        textField.text = "";
-        textField.text = "bye";
-        Invoke("disablePanel", 1);
+        //StopCoroutine(typewriterRoutine);
+        //textField.text = "";
+        //textField.text = "bye";
+        //Invoke("disablePanel", 1);
     }
 
     void disablePanel() {
         panel.SetActive(false);
     }
 
-    IEnumerator typeText(string textString) {
+    IEnumerator typeText(string textString, TurnOf turnOf) {
         var charArray = textString.ToCharArray();
         var index = 0;
+        textField.text = "";
 
         while (index < charArray.Length)
         {
@@ -64,6 +82,8 @@ public class startBuyScreen : MonoBehaviour
             index++;
             yield return new WaitForSeconds(.01f);
         }
+        dialog.currentSpeakerIndex++;
         waitForSpace = true;
+        dropDown.SetActive(true);
     }
 }
