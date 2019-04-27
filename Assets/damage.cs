@@ -4,6 +4,6 @@ using UnityEngine;
 
 public class damage : MonoBehaviour
 {
-    public int dmg;
+    public int dmg = 3;
     
 }

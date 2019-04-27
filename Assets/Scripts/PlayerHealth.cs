@@ -18,6 +18,7 @@ public class PlayerHealth : MonoBehaviour
         {
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
             print(dmg);
+
             healthSO.decreaseHealth(dmg);
             print(healthSO.health);
         }
