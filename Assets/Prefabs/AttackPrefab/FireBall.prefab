@@ -13,8 +13,7 @@ GameObject:
   - component: {fileID: 2049698874425747093}
   - component: {fileID: 2049698874425747094}
   - component: {fileID: 2049698874425747089}
-  - component: {fileID: 2279159530776597639}
-  - component: {fileID: 147736302209841560}
+  - component: {fileID: 4903735042177679630}
   m_Layer: 0
   m_Name: FireBall
   m_TagString: Untagged
@@ -111,20 +110,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2279159530776597639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049698874425747095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dmg: 50
---- !u!82 &147736302209841560
+--- !u!82 &4903735042177679630
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -210,7 +196,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1.1
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -227,6 +213,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049698874425747091}
     m_Modifications:
+    - target: {fileID: 204727010151362967, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
+        type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
     - target: {fileID: 204727010151362960, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -282,10 +273,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 204727010151362967, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
+    - target: {fileID: 204727010151362961, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
         type: 3}
-      propertyPath: m_Name
-      value: Particle System
+      propertyPath: EmissionModule.rateOverDistance.scalar
+      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116, type: 3}

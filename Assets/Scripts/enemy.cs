@@ -12,7 +12,7 @@ public class enemy : MonoBehaviour
 
     public float stopDistance;
 
-    bool dead = false;
+    public bool dead = false;
 
     public float alternator = 0.1f;
     // Start is called before the first frame update

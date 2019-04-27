@@ -10,6 +10,7 @@ public class EnemyAttack : MonoBehaviour
     projectile projectile;
 
     public Coroutine runningCoRoutine;
+    public float intervalSec;
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +28,7 @@ public class EnemyAttack : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(intervalSec);
             shoot();
         }
     }
