@@ -53,9 +53,13 @@ public class enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        if (collision.collider.CompareTag("Projectile"))
+        {
         var dmgScript = collision.collider.GetComponent<damage>();
         if (dmgScript != null) {
             health -= dmgScript.dmg;
+        }
+
         }
     }
 
