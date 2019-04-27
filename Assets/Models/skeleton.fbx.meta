@@ -46,6 +46,22 @@ ModelImporter:
     100080: upper_arm.L
     100082: upper_arm.R
     100084: "W\xFCrfel.002"
+    100086: Camera
+    100088: elbow.L
+    100090: elbow.L_end
+    100092: elbow.R
+    100094: elbow.R_end
+    100096: foot_IK.L
+    100098: foot_IK.R
+    100100: hand_IK.L
+    100102: hand_IK.R
+    100104: Head_IK
+    100106: Head_IK_end
+    100108: knee.L
+    100110: knee.L_end
+    100112: knee.R
+    100114: knee.R_end
+    100116: Lamp
     400000: breast.L
     400002: breast.L_end
     400004: breast.R
@@ -89,9 +105,29 @@ ModelImporter:
     400080: upper_arm.L
     400082: upper_arm.R
     400084: "W\xFCrfel.002"
+    400086: Camera
+    400088: elbow.L
+    400090: elbow.L_end
+    400092: elbow.R
+    400094: elbow.R_end
+    400096: foot_IK.L
+    400098: foot_IK.R
+    400100: hand_IK.L
+    400102: hand_IK.R
+    400104: Head_IK
+    400106: Head_IK_end
+    400108: knee.L
+    400110: knee.L_end
+    400112: knee.R
+    400114: knee.R_end
+    400116: Lamp
+    2000000: Camera
     2100000: No Name
     4300000: "W\xFCrfel.002"
+    7400000: metarig|Attack_ThrowBone
+    7400002: metarig|Idle
     9500000: //RootNode
+    10800000: Lamp
     13700000: "W\xFCrfel.002"
   externalObjects: {}
   materials:
