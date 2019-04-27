@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class PlayerHealth : MonoBehaviour
 {
 
     public Health healthSO;
+    public UnityEvent deathEvent;
     
 
     private void Start()
@@ -21,7 +23,11 @@ public class PlayerHealth : MonoBehaviour
             print(dmg);
 
             healthSO.decreaseHealth(dmg);
-            print(healthSO.health);
+            if (healthSO.health <= 0)
+            {
+                deathEvent.Invoke();
+            }
         }
+        
     }
 }
