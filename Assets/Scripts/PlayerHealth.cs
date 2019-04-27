@@ -16,7 +16,10 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectile"))
         {
-            healthSO.decreaseHealth(1);
+            int dmg = collision.gameObject.GetComponent<damage>().dmg;
+            print(dmg);
+
+            healthSO.decreaseHealth(dmg);
             print(healthSO.health);
         }
     }
