@@ -12,7 +12,7 @@ public class movement : MonoBehaviour
     Vector2 oldInput;
     float angle;
 
-    public float speed = 3;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +26,23 @@ public class movement : MonoBehaviour
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
         var direction = new Vector3(horizontal, 0, vertical);
-        rb.MovePosition(transform.position + direction * Time.deltaTime);
+        rb.MovePosition(transform.position + direction * speed);
 
 
 
-        var x = Input.GetAxis("Mouse X");
-        var y = Input.GetAxis("Mouse Y");
-        
+        RaycastHit hit;
+        Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+        var mask = LayerMask.GetMask("ground");
+        if (Physics.Raycast(ray, out hit, mask))
+        {
+            if (!hit.transform.CompareTag("Player"))
+            {
+                mouseHit.transform.position = hit.point;
+                transform.LookAt(new Vector3(hit.point.x,transform.position.y,hit.point.z));
+            }
+            
+        }
+
 
     }
 }
