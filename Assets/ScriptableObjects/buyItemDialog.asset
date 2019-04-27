@@ -19,4 +19,9 @@ MonoBehaviour:
     turnOf: 0
   - text: Wer suchet der findet...
     turnOf: 1
+  - text: Aber du kriegst nichts
+    turnOf: 1
+  - text: Aber warum
+    turnOf: 0
   endWithBuyScreen: 1
+  currentSpeakerIndex: 5
