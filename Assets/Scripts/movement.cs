@@ -32,15 +32,7 @@ public class movement : MonoBehaviour
 
         var x = Input.GetAxis("Mouse X");
         var y = Input.GetAxis("Mouse Y");
-        var delta = oldInput - new Vector2(x, y);
         
-        oldInput = new Vector2(x, y);
-
-        delta = delta.normalized;
-        print(delta);
-        angle = Vector2.Angle(transform.forward, delta);
-        
-        transform.rotation=Quaternion.Euler(transform.rotation.eulerAngles.x,angle, transform.rotation.eulerAngles.z);
 
     }
 }
