@@ -12,9 +12,9 @@ public class enemy : MonoBehaviour
 
     public float stopDistance;
 
-    bool dead = false;
+    public bool dead = false;
 
-    float alternator = 1;
+    public float alternator = 0.1f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,12 +25,12 @@ public class enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dead)
+        {
+            return;
+        }
         if (health < 0)
         {
-            if (dead)
-            {
-                return;
-            }
             dead = true;
             agent.isStopped = false;
             var enemyAttack = GetComponent<EnemyAttack>();
@@ -63,9 +63,9 @@ public class enemy : MonoBehaviour
     {
         while (true)
         {
-            transform.localScale *= alternator * 1.01f;
+            transform.localScale *= alternator + 1f;
             alternator *= -1;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.1f);
         }
     }
 }

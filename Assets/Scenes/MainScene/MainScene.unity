@@ -332,6 +332,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 52.858, y: 0, z: 0}
+--- !u!4 &864980005 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4003905871643081645, guid: f7f2f0eb26de1174793f7877ea1d007b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2121546718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909431862
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -398,6 +404,20 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222020915758495625, guid: f45ce82d65bf5384b809245e42e267b8,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.4915993
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222020915758495625, guid: f45ce82d65bf5384b809245e42e267b8,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.24579972
+      objectReference: {fileID: 0}
+    - target: {fileID: 365221784, guid: f45ce82d65bf5384b809245e42e267b8, type: 3}
+      propertyPath: intervalSec
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45ce82d65bf5384b809245e42e267b8, type: 3}
@@ -553,5 +573,14 @@ PrefabInstance:
       propertyPath: mouseHit
       value: 
       objectReference: {fileID: 2065970903}
+    - target: {fileID: 2121546723, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
+      propertyPath: attack2
+      value: 
+      objectReference: {fileID: 6655026222049867628, guid: 6dd03173f0fc9d04fb8e7282415c9cd1,
+        type: 3}
+    - target: {fileID: 2121546723, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
+      propertyPath: startPosition
+      value: 
+      objectReference: {fileID: 864980005}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
