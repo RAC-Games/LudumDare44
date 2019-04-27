@@ -108,19 +108,19 @@ MonoBehaviour:
   - fromScene: Level_2_R_1
     fromDoor: 2_3
     toScene: Level_2_R_3
-    toDoor: 2_6ss
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+    toDoor: 2_6
+  - fromScene: Level_2_R_2
+    fromDoor: 2_5
+    toScene: Level_2_R_3
+    toDoor: 2_7
+  - fromScene: Level_2_R_3
+    fromDoor: 2_8
+    toScene: Level_2_R_4
+    toDoor: 2_10
+  - fromScene: Level_2_R_3
+    fromDoor: 2_9
+    toScene: Level_2_R_5
+    toDoor: 2_11
   - fromScene: 
     fromDoor: 
     toScene: 
