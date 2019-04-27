@@ -4710,6 +4710,7 @@ GameObject:
   - component: {fileID: 4561199705125105232}
   - component: {fileID: 8426429579979427472}
   - component: {fileID: 2615355956709275064}
+  - component: {fileID: 7998132230432477882}
   m_Layer: 0
   m_Name: MagicAttack
   m_TagString: Projectile
@@ -4859,6 +4860,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   duration: 0.25
   magnitude: 0.125
+--- !u!114 &7998132230432477882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6655026222049867628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 10
+  isFromPlayer: 0
 --- !u!1 &6655026222473732153
 GameObject:
   m_ObjectHideFlags: 0
