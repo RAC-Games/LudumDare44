@@ -1659,7 +1659,7 @@ PrefabInstance:
     - target: {fileID: 7952114115858503337, guid: 47798e679227e1d4c90caa0e1f2492ab,
         type: 3}
       propertyPath: nextDoor
-      value: doorStart
+      value: HubTeleport
       objectReference: {fileID: 0}
     - target: {fileID: 911528492737367367, guid: 47798e679227e1d4c90caa0e1f2492ab,
         type: 3}
