@@ -15,6 +15,7 @@ public class enemy : MonoBehaviour
     public float attackDistance;
     public float followDistance;
     public bool dead = false;
+    public GameObject heartOrb;
     public UnityEvent die;
 
     public float alternator = 0.1f;
@@ -107,6 +108,7 @@ public class enemy : MonoBehaviour
 
     private void isDead()
     {
+        Instantiate(heartOrb, transform.position, Quaternion.identity);
         anim.SetInteger("State", 3);
         dead = true;
         agent.isStopped = true;

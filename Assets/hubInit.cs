@@ -18,6 +18,14 @@ public class hubInit : MonoBehaviour
     public GameObject doorBoss;
     public GameObject doorBossClosed;
 
+    public DialogSO level1;
+    public DialogSO level2;
+    public DialogSO level3;
+    public DialogSO level4;
+    public DialogSO levelBoss;
+    public DialogSO waiting;
+
+    public startBuyScreen buyDialog;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,5 +51,21 @@ public class hubInit : MonoBehaviour
         door4Closed.SetActive(!progress.door4);
         doorBoss.SetActive(progress.doorBoss);
         doorBossClosed.SetActive(!progress.doorBoss);
+
+        if (progress.door4)
+        {
+            buyDialog.dialog = levelBoss;
+        }else if (progress.door3)
+        {
+            buyDialog.dialog = level4;
+        }
+        else if (progress.door2)
+        {
+            buyDialog.dialog = level3;
+        }
+        else if (progress.door1)
+        {
+            buyDialog.dialog = level2;
+        }
     }
 }
