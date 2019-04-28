@@ -1,16 +1,21 @@
 fileFormatVersion: 2
-guid: ec11007ed73ff6e4eacf3ee90ad66157
+guid: 153ecc5291dd49144b0dc95be8de7e16
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: bone.001
+    2100000: Material.002
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
-    9500000: //RootNode
-  externalObjects: {}
+    4300000: Zylinder
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 60a4787254708c8458f42d1f678344b1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -62,8 +67,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
-    hasPreviousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -90,7 +95,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
