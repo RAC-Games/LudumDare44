@@ -9,8 +9,10 @@ public class PlayerHealth : MonoBehaviour
     public Health healthSO;
     public UnityEvent deathEvent;
     public UnityEvent hurtEvent;
-    
-    
+    public Animator anim;
+
+    bool animationPlayed = false;
+    bool isInvincible = false;
 
     private void Start()
     {
@@ -22,18 +24,35 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile") && !(collision.gameObject.GetComponent<damage>().isFromPlayer))
         {
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
-            
 
-            healthSO.decreaseHealth(dmg);
-            if (healthSO.health <= 0)
+            if (!isInvincible)
             {
-                deathEvent.Invoke();
+                healthSO.decreaseHealth(dmg);
+                if (healthSO.health <= 0 && !animationPlayed)
+                {
+                    deathEvent.Invoke();
+                    anim.SetTrigger("died");
+                    animationPlayed = true;
+                }
+                else
+                {
+                    print("hit, health: " + healthSO.health);
+                    hurtEvent.Invoke();
+                    isInvincible = true;
+                    StartCoroutine(invincible());
+
+                }
             }
-            else
-            {
-                hurtEvent.Invoke();
-            }
+            
         }
         
+    }
+
+    IEnumerator invincible()
+    {
+
+
+        yield return new WaitForSeconds(2);
+        isInvincible = false;
     }
 }
