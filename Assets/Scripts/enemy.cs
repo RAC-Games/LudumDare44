@@ -7,11 +7,12 @@ public class enemy : MonoBehaviour
 {
     GameObject player;
     NavMeshAgent agent;
+    Animator anim;
+    EnemyAttack enemyAttack;
 
     public float health;
-
-    public float stopDistance;
-
+    public float attackDistance;
+    public float followDistance;
     public bool dead = false;
 
     public float alternator = 0.1f;
@@ -20,6 +21,8 @@ public class enemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
+        enemyAttack = GetComponent<EnemyAttack>();
     }
 
     // Update is called once per frame
@@ -29,24 +32,18 @@ public class enemy : MonoBehaviour
         {
             return;
         }
-        if (health < 0)
+        float distance = Vector3.Distance(transform.position, player.transform.position);
+        if(distance > attackDistance)
         {
-            dead = true;
-            agent.isStopped = false;
-            var enemyAttack = GetComponent<EnemyAttack>();
-            StopCoroutine(enemyAttack.runningCoRoutine);
-            Destroy(gameObject, 2);
-            StartCoroutine(growRoutine());
-        }
-
-        if (Vector3.Distance(transform.position,player.transform.position)> stopDistance)
-        {
-            agent.isStopped = false;
-            agent.destination = player.transform.position;
+            if(distance > followDistance)
+            {
+                goIdle();
+            }
+            follow();
         }
         else
         {
-            agent.isStopped = true;
+            attack();
         }
 
     }
@@ -59,9 +56,19 @@ public class enemy : MonoBehaviour
         if (dmgScript != null) {
             health -= dmgScript.dmg;
         }
+        if (health < 0)
+            {
+                dead = true;
+                agent.isStopped = false;
+                var enemyAttack = GetComponent<EnemyAttack>();
+                StopCoroutine(enemyAttack.runningCoRoutine);
+                Destroy(gameObject, 2);
+                StartCoroutine(growRoutine());
+            }
 
         }
     }
+
 
     IEnumerator growRoutine()
     {
@@ -71,5 +78,29 @@ public class enemy : MonoBehaviour
             alternator *= -1;
             yield return new WaitForSeconds(0.1f);
         }
+    }
+
+    private void follow()
+    {
+        agent.isStopped = false;
+        agent.destination = player.transform.position;
+        // Animator -> WalkingAnimation
+        enemyAttack.enabled = false;
+    }
+
+
+    private void attack()
+    {
+        agent.isStopped = true;
+        transform.LookAt(player.transform.position);
+        //Animator -> Schiesanimation
+        enemyAttack.enabled = true;
+    }
+
+    private void goIdle()
+    {
+        agent.isStopped = true;
+        enemyAttack.enabled = false;
+        //Animator -> IdleAnimation
     }
 }
