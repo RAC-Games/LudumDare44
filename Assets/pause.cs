@@ -2,17 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class esc : MonoBehaviour
+public class pause : MonoBehaviour
 {
-
-    public GameObject pauseScreen;
+    GameObject pauseScreen;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             pauseScreen.SetActive(true);
+        }
+        else
+        {
+            pauseScreen.SetActive(false);
         }
     }
 }

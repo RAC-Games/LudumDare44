@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class movement : MonoBehaviour
 {
-    
+    public Camera camera;
     public GameObject mouseHit;
     Rigidbody rb;
 
