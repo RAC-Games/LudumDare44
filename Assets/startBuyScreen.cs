@@ -110,9 +110,11 @@ public class startBuyScreen : MonoBehaviour
 
     public void BuyKey() {
         disableDialog();
+        buyButtons.SetActive(false);
     }
     public void BuyCooldown() {
         disableDialog();
+        buyButtons.SetActive(false);
     }
 
     void disableDialog() {
