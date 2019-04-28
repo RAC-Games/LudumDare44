@@ -738,6 +738,12 @@ MonoBehaviour:
   dropDown: {fileID: 7749174378211445101}
   dialog: {fileID: 0}
   buyButtons: {fileID: 7749174378398980645}
+  OnEnd:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  shouldDestroy: 0
 --- !u!1 &7749174378124857496
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,9 +1174,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e75a202f86808af428bb29b8f9e884b3, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -1260,7 +1266,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7749174378963409589
 RectTransform:
   m_ObjectHideFlags: 0

@@ -72,4 +72,10 @@ public class sceneTransition : MonoBehaviour
 
         }
     }
+
+    public void teleportToHub() {
+        memory.nextDoor = "HubTeleport";
+
+        SceneManager.LoadScene("Hub_1", LoadSceneMode.Single);
+    }
 }
