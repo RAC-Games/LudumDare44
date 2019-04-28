@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour
 
     public Health healthSO;
     public UnityEvent deathEvent;
+    public UnityEvent hurtEvent;
     
 
     private void Start()
@@ -26,6 +27,10 @@ public class PlayerHealth : MonoBehaviour
             if (healthSO.health <= 0)
             {
                 deathEvent.Invoke();
+            }
+            else
+            {
+                hurtEvent.Invoke();
             }
         }
         
