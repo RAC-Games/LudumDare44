@@ -31,13 +31,13 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 elapsed = 0;
-                projectile.shoot(startPosition.position, transform.forward, attack1, attack1Speed);
+                projectile.playerShoot(startPosition.position, transform.forward, attack1, attack1Speed);
             }
 
             if (Input.GetMouseButton(1))
             {
                 elapsed = 0;
-                projectile.shoot(startPosition.position, transform.forward, attack2, attack2Speed);
+                projectile.playerShoot(startPosition.position, transform.forward, attack2, attack2Speed);
             }
         }
     }
