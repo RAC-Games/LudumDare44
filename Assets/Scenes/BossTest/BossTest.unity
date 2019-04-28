@@ -358,8 +358,11 @@ MonoBehaviour:
   spawnDistanceFromCenter: 1
   projectile: {fileID: 7653049330811447242, guid: 7d0b9941ff0a3c74d97f22b79efb3cd6,
     type: 3}
-  count: 6
-  force: 120
+  count: 5
+  force: 500
+  splitTime: 1
+  recursive: 1
+  isRoot: 1
 --- !u!4 &1791123484
 Transform:
   m_ObjectHideFlags: 0
@@ -368,7 +371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1791123482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28042412, y: 1.5, z: -1.4233875}
+  m_LocalPosition: {x: 0, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -493,7 +496,7 @@ PrefabInstance:
     - target: {fileID: 4786562263786016993, guid: f7f2f0eb26de1174793f7877ea1d007b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.577
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4786562263786016993, guid: f7f2f0eb26de1174793f7877ea1d007b,
         type: 3}

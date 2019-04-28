@@ -11,20 +11,47 @@ public class CircleShoot : MonoBehaviour
     public GameObject projectile;
     public int count;
     public float force;
+    public float splitTime;
+    public bool recursive;
+    [SerializeField]
+    bool isRoot;
+    int minCount;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!isRoot&&recursive)
+        {
+            print(count + " " + splitTime + " " + transform.parent);
+            StartCoroutine(Splitting());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public float getCooldownDuration()
     {
-        if (Input.GetButtonDown("Jump"))
+        return count * splitTime;
+    }
+
+        // Update is called once per frame
+        void Update()
+    {
+        if (Input.GetButtonDown("Jump") && isRoot)
         {
-            CircleShot();
+            SpawnCircleAttack();
         }   
     }
+    
+    void SpawnCircleAttack()
+    {
+        if (isRoot)
+        {
+            minCount = count - 3;
+            minCount = Mathf.Clamp(minCount, 1, count);
+            CircleShot();
+        }
+    }
+
 
     public void CircleShot()
     {
@@ -34,16 +61,35 @@ public class CircleShoot : MonoBehaviour
             Vector3 dir = Vector3.forward;
             for (float angle = 0; angle < 360f; angle += step)
             {
-               
-                //Vector3 dir = new Vector3(Mathf.Sin(angle * Mathf.Deg2Rad), 0, Mathf.Cos(angle * Mathf.Deg2Rad));
-
                 dir = Quaternion.AngleAxis(step, Vector3.up) * dir;
-                Debug.Log(angle+ " Dir: "+dir);
                 GameObject shot = Instantiate(projectile, transform.position+dir.normalized* spawnDistanceFromCenter, transform.rotation);
                 shot.GetComponent<Rigidbody>().AddForce(dir * force);
-                Destroy(shot, 5);
+                CircleShoot newCircleShoot = shot.GetComponent<CircleShoot>();
+                newCircleShoot.count = count - 1;
+                newCircleShoot.force = force;
+                newCircleShoot.minCount = minCount;
+                newCircleShoot.splitTime = splitTime;
+                newCircleShoot.recursive = recursive;
             }
         }
+    }
 
+    void Split()
+    {
+        if (count > minCount)
+        {
+            CircleShot();
+        }
+        Destroy(gameObject);
+    }
+
+    IEnumerator Splitting()
+    {
+        if (splitTime > 0)
+        {
+            yield return new WaitForSeconds(splitTime);
+            print("Splitting");
+            Split();
+        }
     }
 }
