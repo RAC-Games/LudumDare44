@@ -32,7 +32,7 @@ public class enemy : MonoBehaviour
         {
             return;
         }
-        float distance = Vector3.Distance(transform.position, player.transform.position)
+        float distance = Vector3.Distance(transform.position, player.transform.position);
         if(distance > attackDistance)
         {
             if(distance > followDistance)
@@ -84,7 +84,7 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = false;
         agent.destination = player.transform.position;
-        // Animator -> WalkingAnimation
+        anim.SetInteger("State", 1);
         enemyAttack.enabled = false;
     }
 
@@ -93,6 +93,7 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = true;
         transform.LookAt(player.transform.position);
+        anim.SetInteger("State", 2);
         //Animator -> Schiesanimation
         enemyAttack.enabled = true;
     }
@@ -101,6 +102,7 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = true;
         enemyAttack.enabled = false;
+        anim.SetInteger("State", 0);
         //Animator -> IdleAnimation
     }
 }

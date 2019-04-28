@@ -560,7 +560,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -577,9 +577,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45fa455ebf74d9449e233bf187989fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attack1: {fileID: 2049698874425747095, guid: 27984ee70213b784e900cdf8db964bf1, type: 3}
+  attack1: {fileID: 1075781855252214180, guid: 9253021539b10844c8b9462169bc8594, type: 3}
   startPosition: {fileID: 5967417725544171905}
-  intervalSec: 2
+  intervalSec: 3
 --- !u!114 &2104407378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -627,7 +627,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  stopDistance: 4
+  attackDistance: 3
+  followDistance: 7
   dead: 0
   alternator: 0.5
 --- !u!1 &5967417725543880131
