@@ -7,15 +7,16 @@ public class BossAttack : MonoBehaviour
     [SerializeField]
     BossPhaseSO[] bossPhases;
     int phaseID;
-    int maxHP = 100;
+    float maxHP = 100;
     CircleShoot circleAttack;
     float attackFrequency;
-    int hp = 100;
+    //int hp = 100;
     public BossPhaseSO curPhase;
 
 
     private void Start()
     {
+        maxHP = GetComponent<enemy>().health;
         circleAttack = GetComponent<CircleShoot>();
         UpdateBossPhase(bossPhases[0]);
         StartCoroutine(AttackLoop());
@@ -25,9 +26,9 @@ public class BossAttack : MonoBehaviour
     {
         if (Input.GetButtonDown("Jump"))
         {
-            hp--;
-            Debug.Log(hp);
-            CheckForPhaseUpdate(hp);
+            //hp--;
+            //Debug.Log(hp);
+            //CheckForPhaseUpdate(hp);
         }
     }
 
@@ -38,10 +39,14 @@ public class BossAttack : MonoBehaviour
         StartCoroutine(AttackLoop());
 
     }
+    public void CheckForPhaseUpdate() {
+        CheckForPhaseUpdate(GetComponent<enemy>().health);
+    }
+    
 
-    void CheckForPhaseUpdate(int hp)
+    public void CheckForPhaseUpdate(float hp)
     {
-        float step = maxHP /(float) bossPhases.Length;
+        float step = maxHP / bossPhases.Length;
         for(int i = 1; i < bossPhases.Length; i++)
         {
             Debug.Log("Check " + hp + " < " + (maxHP - step * i));

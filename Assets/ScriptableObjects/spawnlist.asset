@@ -113,10 +113,10 @@ MonoBehaviour:
     fromDoor: door_open Nummer 8a
     toScene: Level_4_R_4
     toDoor: door_open Nummer 8b
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+  - fromScene: Hub_1
+    fromDoor: Boss_open
+    toScene: BossTest
+    toDoor: Spawn
   - fromScene: 
     fromDoor: 
     toScene: 
