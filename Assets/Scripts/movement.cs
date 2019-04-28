@@ -30,7 +30,11 @@ public class movement : MonoBehaviour
         memory.fadeOut = true;
         var spawName = memory.nextDoor;
         var door = GameObject.Find(spawName);
-        if (spawName == "HubTeleport") { return; }
+        if (spawName == "HubTeleport") {
+            var go = GameObject.Find(spawName);
+            transform.position = go.transform.position;
+            return;
+        }
         var spawnTransform = door.transform.GetChild(0);
         transform.position = spawnTransform.transform.position;
 

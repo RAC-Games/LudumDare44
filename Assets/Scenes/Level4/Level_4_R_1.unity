@@ -1518,7 +1518,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-33734
+  m_Name: pb_Mesh14662
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1965,6 +1965,7 @@ GameObject:
   - component: {fileID: 1940662058}
   - component: {fileID: 1940662057}
   - component: {fileID: 1940662056}
+  - component: {fileID: 1940662060}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -4534,6 +4535,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &1940662060
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940662055}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 1767700317}
 --- !u!1001 &2003955359
 PrefabInstance:
   m_ObjectHideFlags: 0

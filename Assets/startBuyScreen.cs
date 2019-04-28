@@ -36,6 +36,7 @@ public class startBuyScreen : MonoBehaviour
         {
             if (Input.anyKey)
             {
+                dropDown.SetActive(false);
                 waitForSpace = false;
                 if (dialog.currentSpeakerIndex<dialog.dialogList.Count)
                 {
