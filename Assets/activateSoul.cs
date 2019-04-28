@@ -26,7 +26,6 @@ public class activateSoul : MonoBehaviour
         {
             var main = ps.main;
             main.startColor = Color.red;
-            progress.setDoor2(true);
         }
         
     }
