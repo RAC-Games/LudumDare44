@@ -1,49 +1,20 @@
 fileFormatVersion: 2
-guid: 65fbad11bb7c0de4f99b4bfd95828370
+guid: 49d2904e431991245b56cdadca36674a
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Null-Objekt
-    100004: Torus
-    100006: "W\xFCrfel"
-    100008: "W\xFCrfel.001"
-    100010: "W\xFCrfel.002"
-    100012: Zylinder
-    100014: Zylinder.001
-    100016: Zylinder.002
     400000: //RootNode
-    400002: Null-Objekt
-    400004: Torus
-    400006: "W\xFCrfel"
-    400008: "W\xFCrfel.001"
-    400010: "W\xFCrfel.002"
-    400012: Zylinder
-    400014: Zylinder.001
-    400016: Zylinder.002
-    2100000: No Name
-    2300000: Torus
-    2300002: "W\xFCrfel"
-    2300004: "W\xFCrfel.001"
-    2300006: "W\xFCrfel.002"
-    2300008: Zylinder
-    2300010: Zylinder.001
-    2300012: Zylinder.002
-    3300000: Torus
-    3300002: "W\xFCrfel"
-    3300004: "W\xFCrfel.001"
-    3300006: "W\xFCrfel.002"
-    3300008: Zylinder
-    3300010: Zylinder.001
-    3300012: Zylinder.002
-    4300000: Zylinder.002
-    4300002: Zylinder.001
-    4300004: Zylinder
-    4300006: Torus
-    4300008: "W\xFCrfel.002"
-    4300010: "W\xFCrfel.001"
-    4300012: "W\xFCrfel"
-  externalObjects: {}
+    2100000: Material.002
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Zylinder
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 10813e232d7614e49bc25e347b8513ee, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
