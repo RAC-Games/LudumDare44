@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 [RequireComponent(typeof(projectile))]
 public class PlayerAttack : MonoBehaviour
 {
     public GameObject attack1;
     public GameObject attack2;
-    public Vector3 mousePosition;
     public Transform startPosition;
+    Animator anim;
+
     projectile projectile;
     public float elapsed = 0f;
     public float attack1Speed = 50;
@@ -19,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         projectile = GetComponent<projectile>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,11 +34,13 @@ public class PlayerAttack : MonoBehaviour
             if (Input.GetMouseButton(0))
             {
                 elapsed = 0;
+                //animation1
                 projectile.playerShoot(startPosition.position, transform.forward, attack1, attack1Speed);
             }
 
             if (Input.GetMouseButton(1))
             {
+                //animation2
                 elapsed = 0;
                 projectile.playerShoot(startPosition.position, transform.forward, attack2, attack2Speed);
             }
