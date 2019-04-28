@@ -15,4 +15,4 @@ MonoBehaviour:
   count: 5
   splitTime: 2
   recursion: 0
-  attackFrequency: 1.1
+  attackFrequency: 2
