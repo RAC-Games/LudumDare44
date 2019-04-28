@@ -1153,7 +1153,7 @@ PrefabInstance:
     - target: {fileID: 3605147171189472982, guid: 4505c48a4a1a07648aff94216bda2369,
         type: 3}
       propertyPath: m_Name
-      value: door_closedexp6
+      value: door_open Hub
       objectReference: {fileID: 0}
     - target: {fileID: 3605147171189891830, guid: 4505c48a4a1a07648aff94216bda2369,
         type: 3}
