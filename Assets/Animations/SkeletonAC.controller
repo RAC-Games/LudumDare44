@@ -333,15 +333,15 @@ AnimatorStateMachine:
     m_Position: {x: 240, y: 84, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102338754467463882}
-    m_Position: {x: 252, y: -48, z: 0}
+    m_Position: {x: 252, y: -84, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 1101369899335723762}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
-  m_AnyStatePosition: {x: 276, y: -120, z: 0}
+  m_AnyStatePosition: {x: 276, y: -144, z: 0}
   m_EntryPosition: {x: 24, y: -120, z: 0}
-  m_ExitPosition: {x: 12, y: 312, z: 0}
+  m_ExitPosition: {x: 324, y: 324, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
   m_DefaultState: {fileID: 1102916860582956620}
