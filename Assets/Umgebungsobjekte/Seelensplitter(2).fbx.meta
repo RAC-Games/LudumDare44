@@ -4,12 +4,21 @@ ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
+    100002: Kugel
+    100004: Kugel.001
     400000: //RootNode
+    400002: Kugel
+    400004: Kugel.001
     2100000: Material.001
     2100002: Material.002
     2300000: //RootNode
+    2300002: Kugel
+    2300004: Kugel.001
     3300000: //RootNode
+    3300002: Kugel
+    3300004: Kugel.001
     4300000: Kugel
+    4300002: Kugel.001
   externalObjects:
   - first:
       type: UnityEngine:Material
