@@ -578,7 +578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attack1: {fileID: 2049698874425747095, guid: 27984ee70213b784e900cdf8db964bf1, type: 3}
-  startPosition: {fileID: 0}
+  startPosition: {fileID: 5967417725544171905}
   intervalSec: 2
 --- !u!114 &2104407378
 MonoBehaviour:
