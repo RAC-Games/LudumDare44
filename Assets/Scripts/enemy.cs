@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class enemy : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class enemy : MonoBehaviour
     public float attackDistance;
     public float followDistance;
     public bool dead = false;
+    public UnityEvent die;
 
     public float alternator = 0.1f;
     // Start is called before the first frame update
@@ -50,20 +52,17 @@ public class enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        print("collided");
         if (collision.collider.CompareTag("Projectile"))
         {
-        var dmgScript = collision.collider.GetComponent<damage>();
-        if (dmgScript != null) {
-            health -= dmgScript.dmg;
-        }
-        if (health < 0)
+            var dmgScript = collision.collider.GetComponent<damage>();
+            if (dmgScript != null)
             {
-                dead = true;
-                agent.isStopped = false;
-                var enemyAttack = GetComponent<EnemyAttack>();
-                StopCoroutine(enemyAttack.runningCoRoutine);
-                Destroy(gameObject, 2);
-                StartCoroutine(growRoutine());
+                health -= dmgScript.dmg;
+            }
+            if (health <= 0)
+            {
+                isDead();
             }
 
         }
@@ -74,8 +73,8 @@ public class enemy : MonoBehaviour
     {
         while (true)
         {
-            transform.localScale *= alternator + 1f;
-            alternator *= -1;
+            transform.localScale *= alternator + .7f;
+            alternator *= -.7f;
             yield return new WaitForSeconds(0.1f);
         }
     }
@@ -84,7 +83,7 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = false;
         agent.destination = player.transform.position;
-        // Animator -> WalkingAnimation
+        anim.SetInteger("State", 1);
         enemyAttack.enabled = false;
     }
 
@@ -93,7 +92,7 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = true;
         transform.LookAt(player.transform.position);
-        //Animator -> Schiesanimation
+        anim.SetInteger("State", 2);
         enemyAttack.enabled = true;
     }
 
@@ -101,6 +100,20 @@ public class enemy : MonoBehaviour
     {
         agent.isStopped = true;
         enemyAttack.enabled = false;
+        anim.SetInteger("State", 0);
         //Animator -> IdleAnimation
+    }
+
+
+    private void isDead()
+    {
+        anim.SetInteger("State", 3);
+        dead = true;
+        agent.isStopped = true;
+        var enemyAttack = GetComponent<EnemyAttack>();
+        //StopCoroutine(enemyAttack.runningCoRoutine);
+        Destroy(gameObject, 2);
+        StartCoroutine(growRoutine());
+        die.Invoke();
     }
 }
