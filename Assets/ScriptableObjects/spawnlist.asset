@@ -17,26 +17,26 @@ MonoBehaviour:
     fromDoor: Level_1
     toScene: Level_1_R_1
     toDoor: door_open hub
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+  - fromScene: Level_1_R_1
+    fromDoor: door_open Nummer 1a
+    toScene: Level_1_R_4
+    toDoor: door_open Ende Level 1
+  - fromScene: Level_1_R_1
+    fromDoor: door_open Nummer 2a
+    toScene: Level_1_R_2
+    toDoor: door_open Nummer 2b
+  - fromScene: Level_1_R_2
+    fromDoor: door_open Nummer 4b
+    toScene: Level_1_R_3
+    toDoor: door_open Nummer 4b
+  - fromScene: Level_1_R_3
+    fromDoor: door_open Nummer 3b
+    toScene: Level_1_R_4
+    toDoor: door_open Nummer 3b
+  - fromScene: Level_1_R_3
+    fromDoor: door_open Nummer 5a
+    toScene: Level_1_R_4
+    toDoor: door_open Nummer 5a
   - fromScene: 
     fromDoor: 
     toScene: 
@@ -157,15 +157,15 @@ MonoBehaviour:
     fromDoor: 
     toScene: 
     toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+  - fromScene: Level_4_R_1
+    fromDoor: door_open Nummer 6a
+    toScene: Level_4_R_2
+    toDoor: door_open Nummer 6b
+  - fromScene: Level_4_R_2
+    fromDoor: door_open Nummer 7a
+    toScene: Level_4_R_3
+    toDoor: door_open Nummer 7b
+  - fromScene: Level_4_R_3
+    fromDoor: door_open Nummer 8a
+    toScene: Level_4_R_4
+    toDoor: door_open Nummer 8b
