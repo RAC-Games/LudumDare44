@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 2d572c4845c7250478f09f22ae8d63db, type: 2}
 --- !u!1001 &287270453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -123,6 +123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mauer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
@@ -192,6 +197,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knochenstapel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
@@ -412,6 +422,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Simple-Holzkiste
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -480,6 +495,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FassV2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
@@ -550,6 +570,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kerzen_Gruppe (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -619,6 +644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knochenstapel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -682,7 +712,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14432
+  m_Name: pb_Mesh100976
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -922,6 +952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knochenstapel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -990,6 +1025,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Seelensplitter (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557548434951112259, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6557548434950822499, guid: 326a9fe5d186d594e83bd429a791a337,
         type: 3}
@@ -1061,6 +1101,101 @@ PrefabInstance:
       propertyPath: OnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: teleportToHub
       objectReference: {fileID: 0}
+    - target: {fileID: 3396490149122474503, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150780750556, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150043387440, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150393370505, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150615018392, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150410778832, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149204674134, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149095256685, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5509257100705600055, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557548434951112257, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6557548434951112263, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359411961234005657, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149981130251, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149345716892, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149450238359, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149472551640, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490150337017921, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149192790285, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3396490149547361626, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 326a9fe5d186d594e83bd429a791a337, type: 3}
 --- !u!1001 &1253876067
@@ -1074,6 +1209,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knochenstapel (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
@@ -1143,6 +1283,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FassV2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
@@ -1219,7 +1364,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1456754029
 MonoBehaviour:
@@ -3109,6 +3254,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FassV2
       objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3177,6 +3327,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerzen_Gruppe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
@@ -3247,6 +3402,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Kerzen_Gruppe
       objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3315,6 +3475,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerzen_Gruppe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
@@ -3385,6 +3550,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FassV2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3453,6 +3623,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knochenstapel (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
