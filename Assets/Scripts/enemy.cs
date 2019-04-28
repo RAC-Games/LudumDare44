@@ -52,13 +52,15 @@ public class enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        print("collided");
         if (collision.collider.CompareTag("Projectile"))
         {
-        var dmgScript = collision.collider.GetComponent<damage>();
-        if (dmgScript != null) {
-            health -= dmgScript.dmg;
-        }
-        if (health < 0)
+            var dmgScript = collision.collider.GetComponent<damage>();
+            if (dmgScript != null)
+            {
+                health -= dmgScript.dmg;
+            }
+            if (health <= 0)
             {
                 isDead();
             }
@@ -71,8 +73,8 @@ public class enemy : MonoBehaviour
     {
         while (true)
         {
-            transform.localScale *= alternator + 1f;
-            alternator *= -1;
+            transform.localScale *= alternator + .7f;
+            alternator *= -.7f;
             yield return new WaitForSeconds(0.1f);
         }
     }
@@ -91,7 +93,6 @@ public class enemy : MonoBehaviour
         agent.isStopped = true;
         transform.LookAt(player.transform.position);
         anim.SetInteger("State", 2);
-        //animator Event auslösen
         enemyAttack.enabled = true;
     }
 
@@ -110,7 +111,7 @@ public class enemy : MonoBehaviour
         dead = true;
         agent.isStopped = true;
         var enemyAttack = GetComponent<EnemyAttack>();
-        StopCoroutine(enemyAttack.runningCoRoutine);
+        //StopCoroutine(enemyAttack.runningCoRoutine);
         Destroy(gameObject, 2);
         StartCoroutine(growRoutine());
         die.Invoke();

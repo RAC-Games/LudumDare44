@@ -169,7 +169,7 @@ ModelImporter:
       curves: []
       events:
       - time: 0.401521
-        functionName: shoot
+        functionName: shootBone
         data: 
         objectReferenceParameter: {fileID: 5967417725543880129, guid: c606179972c6eb040a52edc84f5c3324,
           type: 3}

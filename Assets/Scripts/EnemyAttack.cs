@@ -32,7 +32,7 @@ public class EnemyAttack : MonoBehaviour
             shoot();
         }
     }*/
-    void shoot() {
+    public void shootBone() {
         projectile.shoot(startPosition.position, transform.forward, attack1);
     }
 }
