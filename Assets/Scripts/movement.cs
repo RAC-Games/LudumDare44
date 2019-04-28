@@ -82,7 +82,9 @@ public class movement : MonoBehaviour
     void LateUpdate()
     {
         // Set the position of the camera's transform to be the same as the player's, but offset by the calculated offset distance.
-        camera.transform.position = transform.position + offset;
+        Vector3 pos = transform.position + offset;
+        pos.y = camera.transform.position.y;
+        camera.transform.position = pos;
     }
 
     
