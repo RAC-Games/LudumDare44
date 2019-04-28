@@ -348,6 +348,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d8e8c98d457f8a438720cc3c32ee96a, type: 3}
+--- !u!4 &524624578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5844363370907778021, guid: f7f2f0eb26de1174793f7877ea1d007b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2121546718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!20 &534669904 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4815584137617926660, guid: 8c403ecb6534151418f40f66c0f7c283,
@@ -576,7 +582,7 @@ PrefabInstance:
     - target: {fileID: 5730644828178152313, guid: f45ce82d65bf5384b809245e42e267b8,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5730644828178152314, guid: f45ce82d65bf5384b809245e42e267b8,
         type: 3}
@@ -649,6 +655,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f45ce82d65bf5384b809245e42e267b8, type: 3}
+--- !u!95 &1988491373 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 147826625041293713, guid: f7f2f0eb26de1174793f7877ea1d007b,
+    type: 3}
+  m_PrefabInstance: {fileID: 2121546718}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2065970903 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8020582950247431130, guid: 517f8fac0532ac64a87310b8db89ac81,
@@ -735,6 +747,14 @@ PrefabInstance:
       propertyPath: mouseHit
       value: 
       objectReference: {fileID: 2065970903}
+    - target: {fileID: 2121546723, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
+      propertyPath: startPosition
+      value: 
+      objectReference: {fileID: 524624578}
+    - target: {fileID: 2121546723, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1988491373}
     - target: {fileID: 571817812, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
       propertyPath: m_CellSize.x
       value: 60
@@ -1198,6 +1218,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844363370907778021, guid: f7f2f0eb26de1174793f7877ea1d007b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844363370907778021, guid: f7f2f0eb26de1174793f7877ea1d007b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 5844363370907778021, guid: f7f2f0eb26de1174793f7877ea1d007b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.463
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2121546722, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}

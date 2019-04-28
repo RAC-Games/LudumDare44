@@ -13,22 +13,21 @@ MonoBehaviour:
   m_Name: startDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: 'Finally arrived! I hope I will get everything for my new friend.
-
-      Oh no. Not again I am doomed down here.'
+  - text: Oh no. Not again I am doomed down here. How do I get out of here ...?
     turnOf: 0
-  - text: I only need a big soul, but I should keep it a secret before someone gets
-      greedy.
+  - text: Probably I only need a big soul to summon a levitate teleport, but I should
+      keep it a secret before someone gets greedy and gets in my way.
     turnOf: 0
   - text: Welcome traveler, I'm Asmodeus, the merchant. What brings you to this ghastly
       cave?
     turnOf: 1
-  - text: I'm... just your average explorer, nothing more
+  - text: I'm... just your average explorer, nothing more mate.
     turnOf: 0
   - text: There's been many of your kind. If you need anything, I can help you. But
       beware, my services won't come cheap.
     turnOf: 1
-  - text: But before, please help me in the first room. It is the left most door.
+  - text: To find what you seek, you have to sweep alle the areas. But before you
+      have to buy the access with parts of your little life energy.
     turnOf: 1
   endWithBuyScreen: 0
   currentSpeakerIndex: 5

@@ -8,7 +8,7 @@ public class setInitDoorProgress : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        progress.door1 = true;
+        progress.door1 = false;
         progress.door2 = false;
         progress.door3 = false;
         progress.door4 = false;
