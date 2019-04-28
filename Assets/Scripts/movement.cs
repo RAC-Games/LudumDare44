@@ -27,9 +27,9 @@ public class movement : MonoBehaviour
         var memory = GameObject.FindGameObjectWithTag("memory");
         
         
-            var spawName = memory.GetComponent<transitionMemory>().nextDoor;
+           /* var spawName = memory.GetComponent<transitionMemory>().nextDoor;
             var door = GameObject.Find(spawName);
-            transform.position = door.transform.position;
+            transform.position = door.transform.position;*/
         
         
     }
