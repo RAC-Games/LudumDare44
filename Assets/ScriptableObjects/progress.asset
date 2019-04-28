@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada43370a02b104a9cc1338ab7cac85, type: 3}
   m_Name: progress
   m_EditorClassIdentifier: 
-  level1: 0
-  level2: 0
-  level3: 0
-  level4: 0
+  doorHub: 0
+  door1: 1
+  door2: 0
+  door3: 0
+  door4: 0
+  doorBoss: 0
