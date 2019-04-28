@@ -1,10 +1,15 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: ec11007ed73ff6e4eacf3ee90ad66157
+=======
+guid: 3ec7a16fdaf9fb0449aed1c18a762744
+>>>>>>> master
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
+<<<<<<< HEAD
     2100000: bone.001
     2300000: //RootNode
     3300000: //RootNode
@@ -15,6 +20,13 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: bone.001
     second: {fileID: 2100000, guid: 23cec1938a6380b44992adbc706d023a, type: 2}
+=======
+    2100000: No Name
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: Cube
+  externalObjects: {}
+>>>>>>> master
   materials:
     importMaterials: 1
     materialName: 0
