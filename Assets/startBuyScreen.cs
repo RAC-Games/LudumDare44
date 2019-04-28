@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class startBuyScreen : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class startBuyScreen : MonoBehaviour
     public GameObject dropDown;
     public DialogSO dialog;
     public GameObject buyButtons;
+    public UnityEvent OnEnd;
     public bool shouldDestroy;
 
     Collider ColliderObj;
@@ -124,6 +126,7 @@ public class startBuyScreen : MonoBehaviour
         buyButtons.SetActive(false);
         ColliderObj.GetComponentInParent<movement>().enabled = true;
         ColliderObj.GetComponentInParent<PlayerAttack>().enabled = true;
+        OnEnd.Invoke();
         if (shouldDestroy)
         {
             Destroy(gameObject, 1);

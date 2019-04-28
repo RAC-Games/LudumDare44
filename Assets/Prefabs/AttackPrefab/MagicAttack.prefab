@@ -4872,7 +4872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dmg: 10
+  dmg: 1
   isFromPlayer: 0
 --- !u!1 &6655026222473732153
 GameObject:
@@ -4890,7 +4890,7 @@ GameObject:
   - component: {fileID: 2145562110093956553}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnConnections:
   - fromScene: Hub_1
-    fromDoor: Level_1
+    fromDoor: Level_1_open
     toScene: Level_1_R_1
     toDoor: door_open hub
   - fromScene: Level_1_R_1
