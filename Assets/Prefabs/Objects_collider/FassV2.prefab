@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3227748732443623454}
   - component: {fileID: 3227748732446523454}
   - component: {fileID: 3227748732445393662}
-  - component: {fileID: 2824257602185952205}
+  - component: {fileID: 5792057143760425105}
+  - component: {fileID: 7056311452152265891}
   m_Layer: 0
   m_Name: FassV2
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3227748732443466814}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -3.058999, y: 1.0999999, z: -2.8805637}
+  m_LocalPosition: {x: -3.058999, y: 1.0999999, z: -2.996}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,8 +79,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2824257602185952205
-MeshCollider:
+--- !u!65 &5792057143760425105
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -88,7 +89,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_Mesh: {fileID: 4300000, guid: 49d2904e431991245b56cdadca36674a, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.012856771, y: 0.012715768, z: 0.019999996}
+  m_Center: {x: 0.00046384722, y: -0.000093998904, z: 6.6625676e-20}
+--- !u!135 &7056311452152265891
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3227748732443466814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.009999998
+  m_Center: {x: 0.0000018230639, y: -0.00003829039, z: 0}
