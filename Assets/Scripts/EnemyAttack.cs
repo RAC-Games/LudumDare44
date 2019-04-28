@@ -16,7 +16,7 @@ public class EnemyAttack : MonoBehaviour
     void Start()
     {
         projectile = GetComponent<projectile>();
-        runningCoRoutine = StartCoroutine(shootRoutine());
+        //runningCoRoutine = StartCoroutine(shootRoutine());
     }
 
     // Update is called once per frame
@@ -24,14 +24,14 @@ public class EnemyAttack : MonoBehaviour
     {
         
     }
-    IEnumerator shootRoutine()
+    /*IEnumerator shootRoutine()
     {
         while (true)
         {
             yield return new WaitForSeconds(intervalSec);
             shoot();
         }
-    }
+    }*/
     void shoot() {
         projectile.shoot(startPosition.position, transform.forward, attack1);
     }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 public class enemy : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class enemy : MonoBehaviour
     public float attackDistance;
     public float followDistance;
     public bool dead = false;
+    public UnityEvent die;
 
     public float alternator = 0.1f;
     // Start is called before the first frame update
@@ -58,12 +60,7 @@ public class enemy : MonoBehaviour
         }
         if (health < 0)
             {
-                dead = true;
-                agent.isStopped = false;
-                var enemyAttack = GetComponent<EnemyAttack>();
-                StopCoroutine(enemyAttack.runningCoRoutine);
-                Destroy(gameObject, 2);
-                StartCoroutine(growRoutine());
+                isDead();
             }
 
         }
@@ -94,7 +91,7 @@ public class enemy : MonoBehaviour
         agent.isStopped = true;
         transform.LookAt(player.transform.position);
         anim.SetInteger("State", 2);
-        //Animator -> Schiesanimation
+        //animator Event auslösen
         enemyAttack.enabled = true;
     }
 
@@ -104,5 +101,18 @@ public class enemy : MonoBehaviour
         enemyAttack.enabled = false;
         anim.SetInteger("State", 0);
         //Animator -> IdleAnimation
+    }
+
+
+    private void isDead()
+    {
+        anim.SetInteger("State", 3);
+        dead = true;
+        agent.isStopped = true;
+        var enemyAttack = GetComponent<EnemyAttack>();
+        StopCoroutine(enemyAttack.runningCoRoutine);
+        Destroy(gameObject, 2);
+        StartCoroutine(growRoutine());
+        die.Invoke();
     }
 }
