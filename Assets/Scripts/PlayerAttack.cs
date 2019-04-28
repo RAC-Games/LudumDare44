@@ -21,6 +21,7 @@ public class PlayerAttack : MonoBehaviour
     void Start()
     {
         projectile = GetComponent<projectile>();
+        
     }
 
     // Update is called once per frame
