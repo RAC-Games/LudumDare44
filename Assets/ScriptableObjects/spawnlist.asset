@@ -28,7 +28,7 @@ MonoBehaviour:
   - fromScene: Level_1_R_2
     fromDoor: door_open Nummer 4b
     toScene: Level_1_R_3
-    toDoor: door_open Nummer 4b
+    toDoor: door_open Nummer 4a
   - fromScene: Level_1_R_3
     fromDoor: door_open Nummer 3b
     toScene: Level_1_R_4
@@ -37,13 +37,13 @@ MonoBehaviour:
     fromDoor: door_open Nummer 5a
     toScene: Level_1_R_4
     toDoor: door_open Nummer 5a
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
+  - fromScene: Level_1_R_4
+    fromDoor: door_open Nummer 3a
+    toScene: Level_1_R_3
+    toDoor: door_open Nummer 3b
+  - fromScene: Hub_1
+    fromDoor: Level_2_open
+    toScene: Level_2_R_1
     toDoor: 
   - fromScene: 
     fromDoor: 

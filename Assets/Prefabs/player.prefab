@@ -145,7 +145,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camera: {fileID: 0}
   mouseHit: {fileID: 0}
-  speed: 0.1
+  speed: 0.5
 --- !u!54 &2121546721
 Rigidbody:
   m_ObjectHideFlags: 0
