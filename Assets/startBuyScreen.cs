@@ -13,6 +13,7 @@ public class startBuyScreen : MonoBehaviour
     public GameObject dropDown;
     public DialogSO dialog;
     public GameObject buyButtons;
+    public bool shouldDestroy;
 
     Collider ColliderObj;
     Coroutine typewriterRoutine;
@@ -123,5 +124,9 @@ public class startBuyScreen : MonoBehaviour
         buyButtons.SetActive(false);
         ColliderObj.GetComponentInParent<movement>().enabled = true;
         ColliderObj.GetComponentInParent<PlayerAttack>().enabled = true;
+        if (shouldDestroy)
+        {
+            Destroy(gameObject, 1);
+        }
     }
 }

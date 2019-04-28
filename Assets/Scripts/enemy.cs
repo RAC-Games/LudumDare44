@@ -32,7 +32,7 @@ public class enemy : MonoBehaviour
         {
             return;
         }
-        float distance = Vector3.Distance(transform.position, player.transform.position)
+        float distance = Vector3.Distance(transform.position, player.transform.position);
         if(distance > attackDistance)
         {
             if(distance > followDistance)
