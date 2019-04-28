@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class catchTheFall : MonoBehaviour
 {
-    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +20,14 @@ public class catchTheFall : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            var memory = GameObject.FindGameObjectWithTag("memory");
-            var spawName = memory.GetComponent<transitionMemory>().nextDoor;
+            var Player = GameObject.Find("player");
+            var playerRb = Player.GetComponent<Rigidbody>();
+            playerRb.velocity = Vector3.zero;
+            playerRb.Sleep();
+            var memoryObj = GameObject.FindGameObjectWithTag("memory");
+            var memory = memoryObj.GetComponent<transitionMemory>();
+            memory.doTransition = false;
+            var spawName = memory.nextDoor;
             var door = GameObject.Find(spawName);
             Player.transform.position = door.transform.position;
         }
