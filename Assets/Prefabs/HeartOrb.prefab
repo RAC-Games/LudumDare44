@@ -5099,6 +5099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99707cd6aafb3d745be816da5371f419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flyDuration: 1.5
   distancePercentageMaximum: 0.9
   distancePercentageMaximumBegin: 0.75
   heightAbovePlayer: 5

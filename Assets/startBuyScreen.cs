@@ -17,6 +17,7 @@ public class startBuyScreen : MonoBehaviour
     public UnityEvent OnEnd;
     public bool shouldDestroy;
     public progressSO progress;
+    public Health health;
 
     public UnityEvent OnButton1;
 
@@ -127,26 +128,37 @@ public class startBuyScreen : MonoBehaviour
         if (!progress.door1)
         {
             progress.door1 = true;
-        }else if (!progress.door2)
+            health.decreaseHealth(1);
+        }
+        else if (!progress.door2)
         {
             progress.door2 = true;
+            health.decreaseHealth(3);
         }
         else if (!progress.door3)
         {
             progress.door3 = true;
+            health.decreaseHealth(5);
         }
         else if (!progress.door4)
         {
             progress.door4 = true;
+            health.decreaseHealth(7);
         }
         else if (!progress.doorBoss)
         {
+            health.decreaseHealth(7);
             progress.doorBoss = true;
         }
-        
+
+        var player = GameObject.FindGameObjectWithTag("Player");
+        var healthUi = player.GetComponentInChildren<HeartUI>();
+        healthUi.UpdateHearts();
     }
 
     public void BuyCooldown() {
+        var memory = GameObject.Find("transitionMemory").GetComponent<transitionMemory>();
+        memory.doTransition = true;
         disableDialog();
         buyButtons.SetActive(false);
     }

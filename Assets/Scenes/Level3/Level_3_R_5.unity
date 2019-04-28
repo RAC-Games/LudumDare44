@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: df0ea4b9fd39c8a42935c3166505fd40, type: 2}
 --- !u!1 &27293008
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +192,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mauer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
@@ -278,6 +283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Einzelne_Kerze (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4867326750410823587, guid: aabcf608f3d3247478ede6e753792375,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4867326750410525571, guid: aabcf608f3d3247478ede6e753792375,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -362,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -649,6 +664,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mauer (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -734,6 +754,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mauer
       objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -818,6 +843,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mauer (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
@@ -1031,6 +1061,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mauer
       objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1224,15 +1259,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1124085742739060883, guid: a834e156954a2fb4ba14e2c0abc647bb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8149545877533518584, guid: a834e156954a2fb4ba14e2c0abc647bb,
         type: 3}
       propertyPath: goingIn
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1124085742739060883, guid: a834e156954a2fb4ba14e2c0abc647bb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a834e156954a2fb4ba14e2c0abc647bb, type: 3}
@@ -1250,7 +1285,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1490964964
 Transform:
@@ -1276,7 +1311,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh16246
+  m_Name: pb_Mesh100054
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1447,7 +1482,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!114 &1834683738
 MonoBehaviour:
@@ -3042,7 +3077,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2101510614
 PrefabInstance:
@@ -3055,6 +3090,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Knochenstapel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}

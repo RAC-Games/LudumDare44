@@ -9,7 +9,7 @@ public class HeartOrb : MonoBehaviour
     float maxPointTime;
     float preMaxPointTime;
     float StartDistance;
-    //[SerializeField]
+    [SerializeField]
     float flyDuration;//=3;
     GameObject player;
     [SerializeField]
@@ -28,7 +28,7 @@ public class HeartOrb : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        flyDuration = speed / getDistance();
+        //flyDuration = speed / getDistance();
         timeStart = Time.time;
         curTime = timeStart;
         startPos = transform.position;
@@ -69,6 +69,8 @@ public class HeartOrb : MonoBehaviour
     {
 
         player.GetComponent<PlayerHealth>().healthSO.increaseHealth();
+        var healthUi = player.GetComponentInChildren<HeartUI>();
+        healthUi.UpdateHearts();
         Destroy(gameObject);
     }
 }
