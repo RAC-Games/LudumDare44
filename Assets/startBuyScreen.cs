@@ -160,7 +160,7 @@ public class startBuyScreen : MonoBehaviour
         OnEnd.Invoke();
         if (shouldDestroy)
         {
-            Destroy(gameObject, 1);
+            Destroy(gameObject);
         }
     }
 }
