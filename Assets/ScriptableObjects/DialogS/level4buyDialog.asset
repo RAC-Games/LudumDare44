@@ -10,13 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a819c4a290fd9994099793a35c5e66b7, type: 3}
-  m_Name: buyStuff
+  m_Name: level4buyDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Warmly welcome adventurer. I assume you are here to spend some of your precious
-      life energy.
+  - text: Welcome back. Got life for more?
     turnOf: 1
-  - text: 'Yeah ... I guess so. Since I don''t have any other possibility. '
+  - text: I guess so...
     turnOf: 0
   - text: Very well then ...
     turnOf: 1

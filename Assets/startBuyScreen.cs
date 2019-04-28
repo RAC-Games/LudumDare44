@@ -36,6 +36,7 @@ public class startBuyScreen : MonoBehaviour
         {
             if (Input.anyKey)
             {
+                dropDown.SetActive(false);
                 waitForSpace = false;
                 if (dialog.currentSpeakerIndex<dialog.dialogList.Count)
                 {
@@ -159,7 +160,7 @@ public class startBuyScreen : MonoBehaviour
         OnEnd.Invoke();
         if (shouldDestroy)
         {
-            Destroy(gameObject, 1);
+            Destroy(gameObject);
         }
     }
 }
