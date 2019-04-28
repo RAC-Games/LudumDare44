@@ -24,14 +24,15 @@ public class movement : MonoBehaviour
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
-        var memory = GameObject.FindGameObjectWithTag("memory");
-        
-        
-           /* var spawName = memory.GetComponent<transitionMemory>().nextDoor;
-            var door = GameObject.Find(spawName);
-            transform.position = door.transform.position;*/
-        
-        
+        var memoryGO = GameObject.FindGameObjectWithTag("memory");
+
+        var memory = memoryGO.GetComponent<transitionMemory>();
+        memory.fadeOut = true;
+        var spawName = memory.nextDoor;
+        var door = GameObject.Find(spawName);
+        transform.position = door.transform.position;
+
+
     }
 
     void Start()
