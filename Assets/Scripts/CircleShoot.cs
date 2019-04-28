@@ -23,7 +23,6 @@ public class CircleShoot : MonoBehaviour
     {
         if (!isRoot&&recursive)
         {
-            print(count + " " + splitTime + " " + transform.parent);
             StartCoroutine(Splitting());
         }
     }
@@ -33,16 +32,8 @@ public class CircleShoot : MonoBehaviour
         return count * splitTime;
     }
 
-        // Update is called once per frame
-        void Update()
-    {
-        if (Input.GetButtonDown("Jump") && isRoot)
-        {
-            SpawnCircleAttack();
-        }   
-    }
     
-    void SpawnCircleAttack()
+    public void SpawnCircleAttack()
     {
         if (isRoot)
         {
@@ -70,6 +61,10 @@ public class CircleShoot : MonoBehaviour
                 newCircleShoot.minCount = minCount;
                 newCircleShoot.splitTime = splitTime;
                 newCircleShoot.recursive = recursive;
+                if (!recursive)
+                {
+                    Destroy(newCircleShoot.gameObject, splitTime*2.5f);
+                }
             }
         }
     }
@@ -88,7 +83,6 @@ public class CircleShoot : MonoBehaviour
         if (splitTime > 0)
         {
             yield return new WaitForSeconds(splitTime);
-            print("Splitting");
             Split();
         }
     }

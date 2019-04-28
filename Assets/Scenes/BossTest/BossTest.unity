@@ -335,6 +335,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791123484}
   - component: {fileID: 1791123483}
+  - component: {fileID: 1791123485}
   m_Layer: 0
   m_Name: TestSpawn
   m_TagString: Untagged
@@ -377,6 +378,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1791123485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1791123482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc4ec2813080524994516c8df1218b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bossPhases:
+  - {fileID: 11400000, guid: fd3a3207e0f4648459183c3a386ebab8, type: 2}
+  - {fileID: 11400000, guid: 54d4aef10cc0b594cae7824a2b6f0c24, type: 2}
+  - {fileID: 11400000, guid: 7e38928b334f50c41bd3e618042c69f1, type: 2}
+  - {fileID: 11400000, guid: a0100161139225644b4e6f68f2a89603, type: 2}
+  - {fileID: 11400000, guid: 623ebcc8a2100c443953727485aed676, type: 2}
+  - {fileID: 11400000, guid: 1b57033ca31197e44a850a890c9e0eca, type: 2}
+  - {fileID: 11400000, guid: 23d26e172df5bcf4b973a4a89d80e298, type: 2}
+  - {fileID: 11400000, guid: 73cb2def2e7f6da40a94a5cf52e4a20f, type: 2}
 --- !u!1001 &1909431862
 PrefabInstance:
   m_ObjectHideFlags: 0
