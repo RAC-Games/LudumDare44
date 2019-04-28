@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657928, g: 0.4964131, b: 0.5748174, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657993, g: 0.49641424, b: 0.57481825, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8be96ca5c1a23384fb845b1e675c0f03, type: 2}
 --- !u!1 &540065445
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh18518
+  m_Name: pb_Mesh98502
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -353,6 +353,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fallCatcher
       objectReference: {fileID: 0}
+    - target: {fileID: 2393916178977821257, guid: 10c6f378ac0812b4b80d51be38b7a5ae,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2393916178977821234, guid: 10c6f378ac0812b4b80d51be38b7a5ae,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -507,6 +512,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knochenstapel
       objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -581,6 +591,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Mauer
+      objectReference: {fileID: 0}
+    - target: {fileID: 9119495996612209662, guid: 47c189485479ee2459a6d999fb3883ce,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9119495996612376542, guid: 47c189485479ee2459a6d999fb3883ce,
         type: 3}
@@ -669,7 +684,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1100191770
 Transform:
@@ -707,7 +722,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &1284408549
 MeshCollider:
@@ -1092,6 +1107,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Einzelne_Kerze
+      objectReference: {fileID: 0}
+    - target: {fileID: 4867326750410823587, guid: aabcf608f3d3247478ede6e753792375,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4867326750410525571, guid: aabcf608f3d3247478ede6e753792375,
         type: 3}

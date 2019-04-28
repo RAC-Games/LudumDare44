@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -111,7 +111,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 52a9beffa4ea0c140ba5519d6507a8d7, type: 2}
 --- !u!1001 &95880667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -283,6 +283,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -367,6 +372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -528,6 +538,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FassV2 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -612,6 +627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -698,6 +718,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Knochenstapel
       objectReference: {fileID: 0}
+    - target: {fileID: 2648623142981151705, guid: 30d824db7995e0e428c5bc703b0ab56c,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2648623142980990969, guid: 30d824db7995e0e428c5bc703b0ab56c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -772,6 +797,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -858,6 +888,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -942,6 +977,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -1113,6 +1153,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1204,7 +1249,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!64 &645793658
 MeshCollider:
@@ -1506,6 +1551,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1585,7 +1635,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh5824
+  m_Name: pb_Mesh99718
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -1751,6 +1801,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1835,6 +1890,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -1921,6 +1981,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2006,6 +2071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FassV2
       objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2090,6 +2160,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: FassV2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
@@ -2178,7 +2253,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1202323465
 Transform:
@@ -2212,6 +2287,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerzen_Gruppe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
@@ -2369,7 +2449,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &1556187536
 Transform:
@@ -2414,6 +2494,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Kerzen_Gruppe
+      objectReference: {fileID: 0}
+    - target: {fileID: 2455095559064390912, guid: a618b3df1dae67d41a70551a6e9f2e85,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
         type: 3}
@@ -2500,6 +2585,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: FassV2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3227748732443466814, guid: 13f6d0290d33c364a9a99c367b0605a9,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2585,6 +2675,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2669,6 +2764,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -2844,6 +2944,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2929,6 +3034,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3013,6 +3123,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
@@ -3292,6 +3407,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Holzkiste (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3376,6 +3496,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Holzkiste (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8921836737348171082, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
         type: 3}

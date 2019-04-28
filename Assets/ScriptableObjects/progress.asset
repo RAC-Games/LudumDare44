@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ada43370a02b104a9cc1338ab7cac85, type: 3}
   m_Name: progress
   m_EditorClassIdentifier: 
-  doorHub: 0
-  door1: 1
+  doorHub: 1
+  door1: 0
   door2: 0
   door3: 0
   door4: 0

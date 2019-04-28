@@ -8,7 +8,7 @@ public class enemy : MonoBehaviour
 {
     GameObject player;
     NavMeshAgent agent;
-    Animator anim;
+    public Animator anim;
     EnemyAttack enemyAttack;
 
     public float health;
@@ -17,6 +17,7 @@ public class enemy : MonoBehaviour
     public bool dead = false;
     public GameObject heartOrb;
     public UnityEvent die;
+    public UnityEvent hurt;
 
     public float alternator = 0.1f;
     // Start is called before the first frame update
@@ -24,7 +25,10 @@ public class enemy : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponent<Animator>();
+        if (anim == null)
+        {
+            anim = GetComponent<Animator>();
+        }
         enemyAttack = GetComponent<EnemyAttack>();
     }
 
@@ -60,6 +64,7 @@ public class enemy : MonoBehaviour
             if (dmgScript != null)
             {
                 health -= dmgScript.dmg;
+                hurt.Invoke();
             }
             if (health <= 0)
             {
@@ -85,7 +90,10 @@ public class enemy : MonoBehaviour
         agent.isStopped = false;
         agent.destination = player.transform.position;
         anim.SetInteger("State", 1);
-        enemyAttack.enabled = false;
+        if (enemyAttack != null)
+        {
+            enemyAttack.enabled = false;
+        }
     }
 
 
@@ -94,13 +102,18 @@ public class enemy : MonoBehaviour
         agent.isStopped = true;
         transform.LookAt(player.transform.position);
         anim.SetInteger("State", 2);
-        enemyAttack.enabled = true;
+        if (enemyAttack != null) {
+            enemyAttack.enabled = true;
+        }
     }
 
     private void goIdle()
     {
         agent.isStopped = true;
-        enemyAttack.enabled = false;
+        if (enemyAttack != null)
+        {
+            enemyAttack.enabled = false;
+        }
         anim.SetInteger("State", 0);
         //Animator -> IdleAnimation
     }
