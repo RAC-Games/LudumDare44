@@ -118,7 +118,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh97356
+  m_Name: pb_Mesh108962
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -356,6 +356,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a618b3df1dae67d41a70551a6e9f2e85, type: 3}
+--- !u!4 &287960383 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2455095559064359200, guid: a618b3df1dae67d41a70551a6e9f2e85,
+    type: 3}
+  m_PrefabInstance: {fileID: 287960382}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &344219954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -859,6 +865,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13f6d0290d33c364a9a99c367b0605a9, type: 3}
+--- !u!4 &772546980 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3227748732443623454, guid: 13f6d0290d33c364a9a99c367b0605a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 772546979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &790598677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1062,9 +1074,8 @@ Transform:
   - {fileID: 1946538336}
   - {fileID: 1271626545}
   - {fileID: 396652036}
-  - {fileID: 1111852151}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1111852147
 GameObject:
@@ -3026,11 +3037,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111852147}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8.299492, y: 0.99628067, z: -9.387537}
+  m_LocalPosition: {x: 6.07, y: 0.99628067, z: -24.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!64 &1111852152
 MeshCollider:
@@ -3474,6 +3485,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9379b9f9fdb5f71439aea21929c7ba5f, type: 3}
+--- !u!4 &1363959389 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8921836737348331882, guid: 9379b9f9fdb5f71439aea21929c7ba5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1363959388}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1535476153
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4205,7 +4222,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &2145753196
 PrefabInstance:
