@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class pause : MonoBehaviour
 {
-    GameObject pauseScreen;
+    public GameObject pauseScreen;
 
     // Update is called once per frame
     void Update()
@@ -13,9 +13,16 @@ public class pause : MonoBehaviour
         {
             pauseScreen.SetActive(true);
         }
-        else
-        {
-            pauseScreen.SetActive(false);
-        }
+        
+    }
+
+    public void quitApp()
+    {
+        Application.Quit();
+    }
+
+    public void goBack()
+    {
+        pauseScreen.SetActive(false);
     }
 }
