@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: startDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Finally arrived! I hope I will get everything for my new friend.
+  - text: 'Finally arrived! I hope I will get everything for my new friend.
+
+      Oh no. Not again I am doomed down here.'
     turnOf: 0
   - text: I only need a big soul, but I should keep it a secret before someone gets
       greedy.
