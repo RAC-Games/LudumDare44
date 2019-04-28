@@ -539,7 +539,7 @@ GameObject:
   - component: {fileID: 2104407380}
   - component: {fileID: 7374474923382212327}
   m_Layer: 0
-  m_Name: Sceleton
+  m_Name: SceletonPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -658,13 +658,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29daabdfb8e0ffb47b31cf30cee07d67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   health: 2
-  attackDistance: 7
-  followDistance: 15
+  attackDistance: 5
+  followDistance: 10
   dead: 0
   heartOrb: {fileID: 5198831948774119564, guid: 81cc2ed03f434534d88fc4248dba3f80,
     type: 3}
   die:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hurt:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
