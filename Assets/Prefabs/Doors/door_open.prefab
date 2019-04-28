@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d337959c5a03b4d469b7aefc5dca6a54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneName: Level_1_R_1
-  nextDoor: door_closedexp6
   memory: {fileID: 0}
+  SpawnList: {fileID: 0}
+  goingIn: 0
 --- !u!1 &7569495590406752081
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,7 +166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 22cf1ef8ad6e42e40a64bf9618039c3d, type: 3}
+  - {fileID: 2100000, guid: f738f7296374b214fb1db06223ca9af4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
