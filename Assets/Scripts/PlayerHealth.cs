@@ -10,6 +10,8 @@ public class PlayerHealth : MonoBehaviour
     public UnityEvent deathEvent;
     public UnityEvent hurtEvent;
     public Animator anim;
+    public GameObject model;
+    public GameObject transModel;
 
     bool animationPlayed = false;
     bool isInvincible = false;
@@ -51,8 +53,15 @@ public class PlayerHealth : MonoBehaviour
     IEnumerator invincible()
     {
 
-
-        yield return new WaitForSeconds(2);
+        for (int i = 0; i < 4; i++)
+        {
+            model.SetActive(false);
+            transModel.SetActive(true);
+            yield return new WaitForSeconds(.2f);
+            model.SetActive(true);
+            transModel.SetActive(false);
+            yield return new WaitForSeconds(.2f);
+        }
         isInvincible = false;
     }
 }
