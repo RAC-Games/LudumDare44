@@ -10,18 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a819c4a290fd9994099793a35c5e66b7, type: 3}
-  m_Name: buyItemDialog
+  m_Name: buyStuff
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Herzlich willkommen! Was ist dein Begehr?
+  - text: Warmly welcome adventurer. I assume you are here to spend some of your precious
+      life energy.
     turnOf: 1
-  - text: Was hast du denn?
+  - text: 'Yeah ... I guess so. Since I don''t have any other possibility. '
     turnOf: 0
-  - text: Wer suchet der findet...
+  - text: Very well then ...
     turnOf: 1
-  - text: Aber du kriegst nichts
-    turnOf: 1
-  - text: Aber warum
-    turnOf: 0
   endWithBuyScreen: 1
-  currentSpeakerIndex: 5
+  currentSpeakerIndex: 0
