@@ -11,10 +11,12 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     float speed;
     GameObject player;
+    Transform lookAtOffset;
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        lookAtOffset = GameObject.Find("CameraLookAtOffset").transform;
     }
 
     // Update is called once per frame
@@ -31,6 +33,6 @@ public class CameraController : MonoBehaviour
 
     private void LateUpdate()
     {
-        //transform.LookAt(player.transform);
+        transform.LookAt(lookAtOffset);
     }
 }
