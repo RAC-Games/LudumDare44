@@ -10,6 +10,7 @@ public class PlayerHealth : MonoBehaviour
     public UnityEvent deathEvent;
     public UnityEvent hurtEvent;
     
+    
 
     private void Start()
     {
@@ -21,7 +22,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.CompareTag("Projectile") && !(collision.gameObject.GetComponent<damage>().isFromPlayer))
         {
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
-            print(dmg);
+            
 
             healthSO.decreaseHealth(dmg);
             if (healthSO.health <= 0)

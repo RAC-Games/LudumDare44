@@ -43,5 +43,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eee90eee9017714d98735ff90c00e89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextDoor: 
+  nextDoor: doorStart
   doTransition: 1

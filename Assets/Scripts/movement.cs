@@ -38,16 +38,13 @@ public class movement : MonoBehaviour
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(camera.gameObject);
     }
-
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         var horizontal = Input.GetAxis("Horizontal");
         var vertical = Input.GetAxis("Vertical");
         var direction = new Vector3(horizontal, 0, vertical);
-        rb.MovePosition(transform.position + direction * speed);
-
-
+        rb.MovePosition(transform.position + direction * Time.deltaTime * speed);
 
         RaycastHit hit;
         Ray ray = camera.ScreenPointToRay(Input.mousePosition);
@@ -56,17 +53,15 @@ public class movement : MonoBehaviour
         {
             if (!hit.transform.CompareTag("Player"))
             {
-                if (mouseHit!=null)
+                if (mouseHit != null)
                 {
 
-                mouseHit.transform.position = hit.point;
+                    mouseHit.transform.position = hit.point;
                 }
-                transform.LookAt(new Vector3(hit.point.x,transform.position.y,hit.point.z));
+                transform.LookAt(new Vector3(hit.point.x, transform.position.y, hit.point.z));
             }
-            
+
         }
-
-
     }
 
     void LateUpdate()

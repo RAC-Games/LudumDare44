@@ -44,63 +44,7 @@ MonoBehaviour:
   - fromScene: Hub_1
     fromDoor: Level_2_open
     toScene: Level_2_R_1
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: Level_2_R_1
-    fromDoor: 2_2
-    toScene: Level_2_R_2
-    toDoor: 2_4
-  - fromScene: Level_3_R_2
-    fromDoor: 3_5
-    toScene: Level_3_R_3
-    toDoor: 3_8
-  - fromScene: Level_3_R_1
-    fromDoor: 3_3
-    toScene: Level_3_R_3
-    toDoor: 3_6
-  - fromScene: Level_3_R_3
-    fromDoor: 3_7
-    toScene: Level_3_R_5
-    toDoor: 3_12
-  - fromScene: Level_3_R_3
-    fromDoor: 3_9
-    toScene: Level_3_R_4
-    toDoor: 3_10
-  - fromScene: Level_3_R_4
-    fromDoor: 3_11
-    toScene: Level_3_R_5
-    toDoor: 3_13
-  - fromScene: Level_3_R_5
-    fromDoor: 3_14
-    toScene: 3_6
-    toDoor: 3_15
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+    toDoor: 2_1
   - fromScene: Level_2_R_1
     fromDoor: 2_2
     toScene: Level_2_R_2
@@ -121,42 +65,42 @@ MonoBehaviour:
     fromDoor: 2_9
     toScene: Level_2_R_5
     toDoor: 2_11
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
+  - fromScene: Hub_1
+    fromDoor: Level_3_open
+    toScene: Level_3_R_1
+    toDoor: 3_1
+  - fromScene: Level_3_R_1
+    fromDoor: 3_2
+    toScene: Level_3_R_2
+    toDoor: 3_4
+  - fromScene: Level_3_R_1
+    fromDoor: 3_3
+    toScene: Level_3_R_3
+    toDoor: 3_6
+  - fromScene: Level_3_R_2
+    fromDoor: 3_5
+    toScene: Level_3_R_3
+    toDoor: 3_8
+  - fromScene: Level_3_R_3
+    fromDoor: 3_7
+    toScene: Level_3_R_5
+    toDoor: 3_12
+  - fromScene: Level_3_R_3
+    fromDoor: 3_9
+    toScene: Level_3_R_4
+    toDoor: 3_10
+  - fromScene: Level_3_R_4
+    fromDoor: 3_11
+    toScene: Level_3_R_5
+    toDoor: 3_13
+  - fromScene: Level_3_R_5
+    fromDoor: 3_14
+    toScene: Level_3_R_6
+    toDoor: 3_15
+  - fromScene: Hub_1
+    fromDoor: Level_4_open
+    toScene: Level_4_R_1
+    toDoor: door_open Hub
   - fromScene: Level_4_R_1
     fromDoor: door_open Nummer 6a
     toScene: Level_4_R_2
@@ -169,3 +113,23 @@ MonoBehaviour:
     fromDoor: door_open Nummer 8a
     toScene: Level_4_R_4
     toDoor: door_open Nummer 8b
+  - fromScene: 
+    fromDoor: 
+    toScene: 
+    toDoor: 
+  - fromScene: 
+    fromDoor: 
+    toScene: 
+    toDoor: 
+  - fromScene: 
+    fromDoor: 
+    toScene: 
+    toDoor: 
+  - fromScene: 
+    fromDoor: 
+    toScene: 
+    toDoor: 
+  - fromScene: 
+    fromDoor: 
+    toScene: 
+    toDoor: 
