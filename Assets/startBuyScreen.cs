@@ -16,6 +16,9 @@ public class startBuyScreen : MonoBehaviour
     public GameObject buyButtons;
     public UnityEvent OnEnd;
     public bool shouldDestroy;
+    public progressSO progress;
+
+    public UnityEvent OnButton1;
 
     Collider ColliderObj;
     Coroutine typewriterRoutine;
@@ -112,9 +115,36 @@ public class startBuyScreen : MonoBehaviour
     }
 
     public void BuyKey() {
+        setNextDoor();
+        OnButton1.Invoke();
         disableDialog();
         buyButtons.SetActive(false);
     }
+
+    private void setNextDoor()
+    {
+        if (!progress.door1)
+        {
+            progress.door1 = true;
+        }else if (!progress.door2)
+        {
+            progress.door2 = true;
+        }
+        else if (!progress.door3)
+        {
+            progress.door3 = true;
+        }
+        else if (!progress.door4)
+        {
+            progress.door4 = true;
+        }
+        else if (!progress.doorBoss)
+        {
+            progress.doorBoss = true;
+        }
+        
+    }
+
     public void BuyCooldown() {
         disableDialog();
         buyButtons.SetActive(false);

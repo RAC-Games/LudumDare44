@@ -21,6 +21,16 @@ public class hubInit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        init();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    public void init() {
         doorHub.SetActive(progress.doorHub);
         doorHubClosed.SetActive(!progress.doorHub);
         door1.SetActive(progress.door1);
@@ -33,11 +43,5 @@ public class hubInit : MonoBehaviour
         door4Closed.SetActive(!progress.door4);
         doorBoss.SetActive(progress.doorBoss);
         doorBossClosed.SetActive(!progress.doorBoss);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
