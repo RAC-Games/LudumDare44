@@ -24,6 +24,10 @@ public class movement : MonoBehaviour
 
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
+        var player = GameObject.FindGameObjectWithTag("Player");
+        var healthUi = player.GetComponentInChildren<HeartUI>();
+        healthUi.UpdateHearts();
+
         var memoryGO = GameObject.FindGameObjectWithTag("memory");
 
         var memory = memoryGO.GetComponent<transitionMemory>();
