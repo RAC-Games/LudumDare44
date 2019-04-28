@@ -157,6 +157,8 @@ public class startBuyScreen : MonoBehaviour
     }
 
     public void BuyCooldown() {
+        var memory = GameObject.Find("transitionMemory").GetComponent<transitionMemory>();
+        memory.doTransition = true;
         disableDialog();
         buyButtons.SetActive(false);
     }
