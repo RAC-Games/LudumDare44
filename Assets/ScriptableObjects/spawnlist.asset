@@ -133,39 +133,3 @@ MonoBehaviour:
     fromDoor: 
     toScene: 
     toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
-  - fromScene: 
-    fromDoor: 
-    toScene: 
-    toDoor: 
