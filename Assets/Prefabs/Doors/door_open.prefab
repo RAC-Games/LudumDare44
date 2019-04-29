@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1124085742739060883}
   - component: {fileID: 7708672132756441373}
   - component: {fileID: 8149545877533518584}
+  - component: {fileID: 6509401487183568044}
   m_Layer: 0
   m_Name: Spawn
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5476241096071538257}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.00511, y: -0.00728, z: -0.00399}
+  m_LocalPosition: {x: -0.00511, y: -0.00116, z: 0.00081}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 7569495590406658929}
@@ -107,6 +108,19 @@ MonoBehaviour:
   memory: {fileID: 0}
   SpawnList: {fileID: 11400000, guid: 565f1ed4605f0ff40a983d543bba564f, type: 2}
   goingIn: 0
+--- !u!65 &6509401487183568044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5476241096071538257}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2, z: 2.13}
+  m_Center: {x: 0, y: 0.3, z: 0.000000022351742}
 --- !u!1 &7569495590406752081
 GameObject:
   m_ObjectHideFlags: 0
