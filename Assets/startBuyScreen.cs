@@ -130,25 +130,30 @@ public class startBuyScreen : MonoBehaviour
         {
             progress.door1 = true;
             health.decreaseHealth(1);
+            health.decreaseMaxHealth(1);
         }
         else if (!progress.door2)
         {
             progress.door2 = true;
-            health.decreaseHealth(3);
+            health.decreaseHealth(2);
+            health.decreaseMaxHealth(2);
         }
         else if (!progress.door3)
         {
             progress.door3 = true;
-            health.decreaseHealth(5);
+            health.decreaseHealth(2);
+            health.decreaseMaxHealth(2);
         }
         else if (!progress.door4)
         {
             progress.door4 = true;
-            health.decreaseHealth(7);
+            health.decreaseHealth(2);
+            health.decreaseMaxHealth(2);
         }
         else if (!progress.doorBoss)
         {
-            health.decreaseHealth(7);
+            health.decreaseHealth(3);
+            health.decreaseMaxHealth(3);
             progress.doorBoss = true;
         }
 
