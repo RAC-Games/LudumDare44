@@ -17,6 +17,7 @@ public class movement : MonoBehaviour
     float angle;
 
     public float speed;
+    MusicManager musicManager;
     // Start is called before the first frame update
 
     Vector3 offset;
@@ -47,7 +48,7 @@ public class movement : MonoBehaviour
         }
         var spawnTransform = door.transform.GetChild(0);
         print(spawnTransform.position);
-        transform.position = spawnTransform.transform.position + Vector3.up*GetComponent<CapsuleCollider>().height;
+        transform.position = spawnTransform.transform.position + Vector3.up*GetComponent<CapsuleCollider>().height/2;
 
 
     }
@@ -59,6 +60,7 @@ public class movement : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         DontDestroyOnLoad(this.gameObject);
         DontDestroyOnLoad(camera.gameObject);
+        musicManager = FindObjectOfType<MusicManager>();
     }
     // Update is called once per frame
     void FixedUpdate()

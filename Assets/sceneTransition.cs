@@ -9,6 +9,7 @@ public class sceneTransition : MonoBehaviour
     public transitionMemory memory;
     public SpawnListSO SpawnList;
     public bool goingIn;
+    MusicManager musicManager;
 
     private void OnEnable()
     {
@@ -65,6 +66,7 @@ public class sceneTransition : MonoBehaviour
                 memory.nextDoor = connection.toDoor;
                 memory.fadeIn = true;
 
+                CheckMusicTransition(connection.toScene);
                 SceneManager.LoadScene(connection.toScene, LoadSceneMode.Single);
             }
             else
@@ -75,6 +77,7 @@ public class sceneTransition : MonoBehaviour
                 memory.nextDoor = connection.fromDoor;
                 memory.fadeIn = true;
 
+                CheckMusicTransition(connection.fromScene);
                 SceneManager.LoadScene(connection.fromScene, LoadSceneMode.Single);
             }
 
@@ -83,11 +86,28 @@ public class sceneTransition : MonoBehaviour
         }
     }
 
+    void CheckMusicTransition(string sceneName)
+    {
+        if (musicManager == null)
+        {
+            musicManager = FindObjectOfType<MusicManager>();
+        }
+        if (sceneName == "Hub_1")
+        {
+            musicManager.PlayHubMusic();
+        }
+        else
+        {
+            musicManager.PlayActionMusic();
+        }
+    }
+
     public void teleportToHub()
     {
         memory.nextDoor = "HubTeleport";
         memory.fadeIn = true;
 
+        CheckMusicTransition("Hub_1");
         SceneManager.LoadScene("Hub_1", LoadSceneMode.Single);
     }
 }
