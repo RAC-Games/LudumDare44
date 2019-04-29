@@ -604,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &93027655381650744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -723,7 +723,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -62}
-  m_SizeDelta: {x: 479.44, y: 100}
+  m_SizeDelta: {x: 532.5, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6108733125186199521
 CanvasRenderer:
@@ -1101,6 +1101,7 @@ GameObject:
   - component: {fileID: 4280524022933096226}
   - component: {fileID: 3155508236382645128}
   - component: {fileID: 6800601311826005053}
+  - component: {fileID: 4962148085442660951}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -1493,6 +1494,32 @@ BoxCollider:
   m_Size: {x: 0.66, y: 0.56, z: 0.66}
   m_Center: {x: 0, y: -0.08, z: 0.11}
 --- !u!114 &6800601311826005053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929825835455530660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb275dabd81d3e42aa68e11e55b8010, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSO: {fileID: 11400000, guid: 54604c02da1635c46a8f63341d79d2f3, type: 2}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  hurtEvent:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  anim: {fileID: 0}
+  model: {fileID: 0}
+  transModel: {fileID: 0}
+--- !u!114 &4962148085442660951
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
