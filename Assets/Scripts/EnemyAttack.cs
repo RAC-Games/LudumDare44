@@ -8,6 +8,7 @@ public class EnemyAttack : MonoBehaviour
     public GameObject attack1;
     public Transform startPosition;
     projectile projectile;
+    Transform player;
 
     public Coroutine runningCoRoutine;
     public float intervalSec;
@@ -15,6 +16,7 @@ public class EnemyAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         projectile = GetComponent<projectile>();
         //runningCoRoutine = StartCoroutine(shootRoutine());
     }
@@ -33,6 +35,7 @@ public class EnemyAttack : MonoBehaviour
         }
     }*/
     public void shootBone() {
-        projectile.shoot(startPosition.position, transform.forward, attack1);
+        Vector3 dir = (player.position - startPosition.position).normalized;
+        projectile.shoot(startPosition.position, dir, attack1);
     }
 }
