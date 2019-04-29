@@ -53,8 +53,10 @@ public class movement : MonoBehaviour
 
     }
 
+
     void Start()
     {
+        camera.GetComponent<CameraController>().setOffset(GameObject.Find("CameraLookAtOffset").transform);
         offset =  camera.transform.position- transform.position;
         Vector2 oldInput = new Vector2(0, 0);
         rb = GetComponent<Rigidbody>();

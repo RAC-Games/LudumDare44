@@ -10,13 +10,16 @@ public class CameraController : MonoBehaviour
     float maxHeight;
     [SerializeField]
     float speed;
-    GameObject player;
     Transform lookAtOffset;
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
-        lookAtOffset = GameObject.Find("CameraLookAtOffset").transform;
+        
+    }
+
+    public void setOffset(Transform offset)
+    {
+        lookAtOffset = offset;
         Scroll(0);
     }
 
@@ -28,7 +31,6 @@ public class CameraController : MonoBehaviour
         {
             if (scrollAmount != 0)
             {
-                print("scrolling");
                 Scroll(scrollAmount);
             }
         }
