@@ -14,7 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public GameObject transModel;
 
     bool animationPlayed = false;
-    bool isInvincible = false;
+    public bool isInvincible = false;
 
     private void Start()
     {

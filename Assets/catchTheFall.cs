@@ -4,17 +4,8 @@ using UnityEngine;
 
 public class catchTheFall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Health playerHealthSO;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -30,6 +21,17 @@ public class catchTheFall : MonoBehaviour
             var spawName = memory.nextDoor;
             var door = GameObject.Find(spawName);
             Player.transform.position = door.transform.position;
+            playerHealthSO.decreaseHealth(1);
+            if (playerHealthSO.health > 0)
+            {
+                Player.GetComponent<PlayerHealth>().hurtEvent.Invoke();
+               
+            }
+            else
+            {
+                
+                Player.GetComponent<PlayerHealth>().deathEvent.Invoke();
+            }
         }
     }
 }
