@@ -8,6 +8,8 @@ public class MusicManager : MonoBehaviour
     AudioSource actionSong;
     [SerializeField]
     float fadeDuration;
+    [SerializeField]
+    float maxVolume;
     float startTime;
     float endTime;
     float curTime;
@@ -37,15 +39,15 @@ public class MusicManager : MonoBehaviour
     public void PlayActionMusic()
     {
         SetDuration();
-        actionVolume = AnimationCurve.EaseInOut(startTime, 0, endTime, 1);
-        hubVolume = AnimationCurve.EaseInOut(startTime, 1, endTime, 0);
+        actionVolume = AnimationCurve.EaseInOut(startTime, 0, endTime, maxVolume);
+        hubVolume = AnimationCurve.EaseInOut(startTime, maxVolume, endTime, 0);
     }
 
     public void PlayHubMusic()
     {
         SetDuration();
-        hubVolume = AnimationCurve.EaseInOut(startTime, 0, endTime, 1);
-        actionVolume = AnimationCurve.EaseInOut(startTime, 1, endTime, 0);
+        hubVolume = AnimationCurve.EaseInOut(startTime, 0, endTime, maxVolume);
+        actionVolume = AnimationCurve.EaseInOut(startTime, maxVolume, endTime, 0);
     }
 
     void SetDuration()
@@ -53,5 +55,6 @@ public class MusicManager : MonoBehaviour
         startTime = Time.time;
         endTime = startTime + fadeDuration;
         curTime = startTime;
+        maxVolume = Mathf.Clamp(maxVolume, 0, 1);
     }
 }
