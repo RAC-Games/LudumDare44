@@ -53,7 +53,7 @@ public class CircleShoot : MonoBehaviour
             for (float angle = 0; angle < 360f; angle += step)
             {
                 dir = Quaternion.AngleAxis(step, Vector3.up) * dir;
-                GameObject shot = Instantiate(projectile, transform.position+dir.normalized* spawnDistanceFromCenter, transform.rotation);
+                GameObject shot = Instantiate(projectile, spawnOffset + transform.position+dir.normalized* spawnDistanceFromCenter, transform.rotation);
                 shot.GetComponent<Rigidbody>().AddForce(dir * force);
                 CircleShoot newCircleShoot = shot.GetComponent<CircleShoot>();
                 newCircleShoot.count = count - 1;

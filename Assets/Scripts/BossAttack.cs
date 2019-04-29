@@ -13,15 +13,23 @@ public class BossAttack : MonoBehaviour
     //int hp = 100;
     public BossPhaseSO curPhase;
     BossHealthbar healthbar;
+    Animator anim;
 
 
     private void Start()
     {
+        anim = GetComponentInChildren<Animator>();
         healthbar = FindObjectOfType<BossHealthbar>();
         maxHP = GetComponent<enemy>().health;
         circleAttack = GetComponent<CircleShoot>();
         UpdateBossPhase(bossPhases[0]);
         StartCoroutine(AttackLoop());
+
+        float step = maxHP / bossPhases.Length;
+        for (int i = 0; i < bossPhases.Length; i++)
+        {
+            Debug.Log("Phase " + i + " at " + (maxHP - step * i));
+        }
     }
 
     private void Update()
@@ -35,7 +43,8 @@ public class BossAttack : MonoBehaviour
     }
 
     IEnumerator AttackLoop()
-    { 
+    {
+        anim.SetTrigger("CircleAttack");
         circleAttack.SpawnCircleAttack();
         yield return new WaitForSeconds(attackFrequency);
         StartCoroutine(AttackLoop());
@@ -50,17 +59,17 @@ public class BossAttack : MonoBehaviour
     {
         UpdateHealthBar(hp);
         float step = maxHP / bossPhases.Length;
-        for(int i = 1; i < bossPhases.Length; i++)
+        for(int i = 0; i < bossPhases.Length; i++)
         {
             Debug.Log("Check " + hp + " < " + (maxHP - step * i));
-            if (hp > maxHP- step*i)
+            if (hp > maxHP- step*(i+1))
             {
-                if (phaseID != i - 1)
+                if (phaseID != i)
                 {
-                    phaseID = i - 1;
+                    phaseID = i;
                     Debug.Log("Phase ID " + phaseID);
-                    UpdateBossPhase(bossPhases[i - 1]);
-                    Debug.Log("Phase " + (i - 1)+" hp "+hp);
+                    UpdateBossPhase(bossPhases[i]);
+                    Debug.Log("Phase " + (i)+" hp "+hp);
                 }
                 break;
             }
