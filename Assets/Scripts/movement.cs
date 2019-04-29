@@ -18,6 +18,8 @@ public class movement : MonoBehaviour
 
     public float speed;
     MusicManager musicManager;
+    CameraController cameraController;
+    float prevY = 0;
     // Start is called before the first frame update
 
     Vector3 offset;
@@ -56,7 +58,8 @@ public class movement : MonoBehaviour
 
     void Start()
     {
-        camera.GetComponent<CameraController>().setOffset(GameObject.Find("CameraLookAtOffset").transform);
+        cameraController = camera.GetComponent<CameraController>();
+        cameraController.setOffset(GameObject.Find("CameraLookAtOffset").transform);
         offset =  camera.transform.position- transform.position;
         Vector2 oldInput = new Vector2(0, 0);
         rb = GetComponent<Rigidbody>();
@@ -99,6 +102,11 @@ public class movement : MonoBehaviour
         Vector3 pos = transform.position + offset;
         pos.y = camera.transform.position.y;
         camera.transform.position = pos;
+        if (prevY != transform.position.y)
+        {
+            cameraController.Scroll(0);
+        }
+        prevY = transform.position.y;
     }
 
     

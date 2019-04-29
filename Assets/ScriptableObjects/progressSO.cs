@@ -38,11 +38,6 @@ public class progressSO : ScriptableObject
 
     public void Progress()
     {
-        if (!doorHub)
-        {
-            doorHub = true;
-            return;
-        }
         if (!door1)
         {
             door1 = true;

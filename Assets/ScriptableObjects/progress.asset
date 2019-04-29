@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorHub: 0
   door1: 1
-  door2: 0
+  door2: 1
   door3: 0
   door4: 0
   doorBoss: 0

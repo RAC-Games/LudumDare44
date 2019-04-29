@@ -126,6 +126,7 @@ public class startBuyScreen : MonoBehaviour
 
     private void setNextDoor()
     {
+        print("setNextDoor");
         if (!progress.door1)
         {
             progress.door1 = true;

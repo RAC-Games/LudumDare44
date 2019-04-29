@@ -36,7 +36,7 @@ public class CameraController : MonoBehaviour
         }
     }
 
-    void Scroll(float scrollAmount)
+    public void Scroll(float scrollAmount)
     {
         transform.Translate(transform.forward * scrollAmount * speed);
         Vector3 pos = transform.position;
