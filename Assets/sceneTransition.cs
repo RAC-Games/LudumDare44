@@ -41,9 +41,11 @@ public class sceneTransition : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log(transform.parent.name + " OnTriggerEnter");
         if (!memory.doTransition)
             return;
 
+        Debug.Log("memory doTransition = true");
         if (other.CompareTag("Player"))
         {
             memory.doTransition = false;
@@ -57,6 +59,7 @@ public class sceneTransition : MonoBehaviour
                 );
                 if (connection == null)
                 {
+                    Debug.Log("No connection");
                     return;
                 }
                 memory.nextDoor = connection.toDoor;
