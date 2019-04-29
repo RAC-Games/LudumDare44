@@ -169,6 +169,7 @@ public class startBuyScreen : MonoBehaviour
         buyButtons.SetActive(false);
         ColliderObj.GetComponentInParent<movement>().enabled = true;
         ColliderObj.GetComponentInParent<PlayerAttack>().enabled = true;
+        GameObject.Find("transitionMemory").GetComponent<transitionMemory>().doTransition = true;
         OnEnd.Invoke();
         if (shouldDestroy)
         {
