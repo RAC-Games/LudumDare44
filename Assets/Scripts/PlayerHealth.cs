@@ -36,7 +36,9 @@ public class PlayerHealth : MonoBehaviour
                     deathEvent.Invoke();
                     anim.SetTrigger("died");
                     animationPlayed = true;
+                    StartCoroutine(revive());
                     FindObjectOfType<sceneTransition>().teleportToHub();
+                    
                 }
                 else
                 {
@@ -67,5 +69,11 @@ public class PlayerHealth : MonoBehaviour
             yield return new WaitForSeconds(.2f);
         }
         isInvincible = false;
+    }
+
+    IEnumerator revive()
+    {
+        yield return new WaitForSeconds(.6f);
+        anim.SetTrigger("revived");
     }
 }
