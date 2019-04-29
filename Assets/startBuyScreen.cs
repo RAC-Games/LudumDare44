@@ -50,6 +50,7 @@ public class startBuyScreen : MonoBehaviour
                         buyButtons.SetActive(true);
                         waitForSpace = false;
                         dropDown.SetActive(true);
+                        progress.Progress();
                     }
                     else {
                         disableDialog();

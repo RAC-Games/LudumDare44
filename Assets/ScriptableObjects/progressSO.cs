@@ -35,4 +35,39 @@ public class progressSO : ScriptableObject
     {
         doorBoss = val;
     }
+
+    public void Progress()
+    {
+        if (!doorHub)
+        {
+            doorHub = true;
+            return;
+        }
+        if (!door1)
+        {
+            door1 = true;
+            return;
+        }
+        if (!door2)
+        {
+            door2 = true;
+            return;
+        }
+        if (!door3)
+        {
+            door3 = true;
+            return;
+        }
+        if (!door4)
+        {
+            door4 = true;
+            return;
+        }
+        if (!doorBoss)
+        {
+            doorBoss = true;
+            return;
+        }
+
+    }
 }
