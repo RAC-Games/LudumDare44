@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: waitingDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Hurry up and finish the area! I am waiting...
+  - text: You haven't finished, have you? Venture on, I'll teleport you to my realm
+      once you "explored" all of one dimension
     turnOf: 1
   endWithBuyScreen: 0
   currentSpeakerIndex: 0

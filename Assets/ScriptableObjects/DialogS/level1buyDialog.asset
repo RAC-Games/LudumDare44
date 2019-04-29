@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: level1buyDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Warmly welcome adventurer. I assume you are here to spend some of your precious
-      life energy.
+  - text: I assume you are here to spend some of your precious life energy.
     turnOf: 1
-  - text: 'Yeah ... I guess so. Since I don''t have any other possibilities. '
+  - text: 'Yeah ... I guess so. Since I don''t have any other possibilities to start
+      exploring. '
     turnOf: 0
   - text: Very well then ...
     turnOf: 1

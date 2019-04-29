@@ -15,9 +15,9 @@ MonoBehaviour:
   dialogList:
   - text: Welcome back. Got life for more?
     turnOf: 1
-  - text: I guess so...
+  - text: Next cave ahead.
     turnOf: 0
-  - text: Very well then ...
+  - text: Keep adventuring.
     turnOf: 1
   endWithBuyScreen: 1
   currentSpeakerIndex: 0
