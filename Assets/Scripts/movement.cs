@@ -38,7 +38,7 @@ public class movement : MonoBehaviour
         var door = GameObject.Find(spawName);
         if (spawName == "HubTeleport") {
             var go = GameObject.Find(spawName);
-            transform.position = go.transform.position + Vector3.up* GetComponent<CapsuleCollider>().height;
+            transform.position = go.transform.position + Vector3.up* GetComponent<CapsuleCollider>().height/2;
             return;
         }
         var spawnTransform = door.transform.GetChild(0);

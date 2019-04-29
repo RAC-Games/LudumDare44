@@ -15,8 +15,13 @@ public class Health : ScriptableObject
         health = Mathf.Max(0, health - damageAmount);
     }
 
+    public void decreaseMaxHealth(int amount)
+    {
+        maxHealth -= amount;
+    }
+
     public void increaseHealth()
     {
-        health += 1;
+        health = Mathf.Min(maxHealth,health +1);
     }
 }
