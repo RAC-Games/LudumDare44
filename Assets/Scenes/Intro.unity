@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -431,7 +431,7 @@ PrefabInstance:
     - target: {fileID: 496837188, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1920676565}
+      objectReference: {fileID: 0}
     - target: {fileID: 496837188, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
       propertyPath: deathEvent.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: teleport
@@ -582,18 +582,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1350847522}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1920676565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920676564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 915bd3b6b7e33ff45a3642f6565b5504, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2049554613
 PrefabInstance:
   m_ObjectHideFlags: 0
