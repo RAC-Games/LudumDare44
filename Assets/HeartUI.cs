@@ -14,9 +14,14 @@ public class HeartUI : MonoBehaviour
 
     public void UpdateHearts()
     {
-        for(int i = 0; i < playerHealth.maxHealth; i++)
+        for(int i = 0; i < 15; i++)
         {
-            if (i < playerHealth.health)
+            if(i >= playerHealth.maxHealth)
+            {
+                fullHearts[i].GetComponent<Image>().enabled = false;
+                emptyHearts[i].GetComponent<Image>().enabled = false;
+            }
+            else if (i < playerHealth.health)
             {
                 fullHearts[i].GetComponent<Image>().enabled = true;
                 emptyHearts[i].GetComponent<Image>().enabled = false;
