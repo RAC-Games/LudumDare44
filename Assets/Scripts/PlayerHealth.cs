@@ -19,6 +19,7 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         healthSO.health = 15;
+        healthSO.maxHealth = 15;
     }
 
     private void OnCollisionEnter(Collision collision)

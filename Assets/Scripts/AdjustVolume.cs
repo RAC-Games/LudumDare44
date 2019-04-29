@@ -10,6 +10,6 @@ public class AdjustVolume : MonoBehaviour
 
     public void SliderToVol()
     {
-        vol.volume = Mathf.Log10(volslider.value) * 20;
+        //vol.volume = Mathf.Log10(volslider.value) * 20;
     }
 }

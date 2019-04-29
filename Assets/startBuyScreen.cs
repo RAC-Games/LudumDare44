@@ -128,6 +128,14 @@ public class startBuyScreen : MonoBehaviour
     private void setNextDoor()
     {
         print("setNextDoor");
+        string debugHelp = "";
+        debugHelp += "Door1 " + progress.door1 + " - ";
+        debugHelp += "Door2 " + progress.door2 + " - ";
+        debugHelp += "Door3 " + progress.door3 + " - ";
+        debugHelp += "Door4 " + progress.door4 + " - ";
+        debugHelp += "DoorBoss " + progress.doorBoss + " - ";
+        print(debugHelp);
+
         if (!progress.door1)
         {
             progress.door1 = true;
