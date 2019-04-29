@@ -4890,6 +4890,18 @@ PrefabInstance:
       propertyPath: OnEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 695694735}
+    - target: {fileID: 3396490149122474498, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: progress
+      value: 
+      objectReference: {fileID: 11400000, guid: 71437f001dc781e4c96ae2e248d33836,
+        type: 2}
+    - target: {fileID: 3396490149122474498, guid: 326a9fe5d186d594e83bd429a791a337,
+        type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 11400000, guid: 54604c02da1635c46a8f63341d79d2f3,
+        type: 2}
     - target: {fileID: 3396490149122474503, guid: 326a9fe5d186d594e83bd429a791a337,
         type: 3}
       propertyPath: m_StaticEditorFlags
