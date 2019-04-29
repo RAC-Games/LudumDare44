@@ -36,6 +36,7 @@ public class PlayerHealth : MonoBehaviour
                     deathEvent.Invoke();
                     anim.SetTrigger("died");
                     animationPlayed = true;
+                    FindObjectOfType<sceneTransition>().teleportToHub();
                 }
                 else
                 {
