@@ -16,9 +16,9 @@ MonoBehaviour:
   - text: Warmly welcome adventurer. I assume you are here to spend some of your precious
       life energy.
     turnOf: 1
-  - text: 'Yeah ... I guess so. Since I don''t have any other possibility. '
+  - text: 'Yeah ... I guess so. Since I don''t have any other possibilities. '
     turnOf: 0
   - text: Very well then ...
     turnOf: 1
   endWithBuyScreen: 1
-  currentSpeakerIndex: 0
+  currentSpeakerIndex: 2
