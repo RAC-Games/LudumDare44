@@ -20,7 +20,7 @@ public class catchTheFall : MonoBehaviour
             memory.doTransition = false;
             var spawName = memory.nextDoor;
             var door = GameObject.Find(spawName);
-            Player.transform.position = door.transform.position;
+            Player.transform.position = door.transform.GetChild(0).position;
             playerHealthSO.decreaseHealth(1);
             if (playerHealthSO.health > 0)
             {
