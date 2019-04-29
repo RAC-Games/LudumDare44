@@ -10,22 +10,22 @@ PrefabInstance:
     - target: {fileID: 7518998210397744949, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
       propertyPath: m_Name
-      value: Kerzen_GruppePrefab
+      value: Kerzen_GruppePrefab (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7518998210397451029, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.980471
+      value: -13.577595
       objectReference: {fileID: 0}
     - target: {fileID: 7518998210397451029, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.100000106
+      value: 1.4510458
       objectReference: {fileID: 0}
     - target: {fileID: 7518998210397451029, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.621122
+      value: -4.5955515
       objectReference: {fileID: 0}
     - target: {fileID: 7518998210397451029, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
@@ -100,12 +100,7 @@ PrefabInstance:
     - target: {fileID: 4965443058780182653, guid: a822ec8f096f9f94592e1f94b3315086,
         type: 3}
       propertyPath: m_Intensity
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4965443058780182653, guid: a822ec8f096f9f94592e1f94b3315086,
-        type: 3}
-      propertyPath: m_Lightmapping
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a822ec8f096f9f94592e1f94b3315086, type: 3}
