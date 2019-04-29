@@ -19,6 +19,7 @@ public class BossAttack : MonoBehaviour
     private void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        GameObject.Find("BossUI").SetActive(true);
         healthbar = FindObjectOfType<BossHealthbar>();
         maxHP = GetComponent<enemy>().health;
         circleAttack = GetComponent<CircleShoot>();
