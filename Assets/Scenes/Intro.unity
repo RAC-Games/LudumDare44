@@ -421,6 +421,11 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 898211503}
+    - target: {fileID: 2121546720, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
+      propertyPath: healthSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 54604c02da1635c46a8f63341d79d2f3,
+        type: 2}
     - target: {fileID: 1267611581, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -1668,6 +1673,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1920676564}
+    - target: {fileID: 8204321357915619106, guid: 54d9bfa09d5c8504a92995080fc6ccc9,
+        type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8204321358749818669, guid: 54d9bfa09d5c8504a92995080fc6ccc9,
         type: 3}
       propertyPath: m_AnchoredPosition.y

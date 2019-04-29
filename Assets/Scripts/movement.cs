@@ -9,6 +9,8 @@ public class movement : MonoBehaviour
     public Camera camera;
     public GameObject mouseHit;
     Rigidbody rb;
+    HeartUI healthUi;
+    public Health healthSO;
 
     Vector3 rotation = new Vector3(0, 0, 0);
     Vector2 oldInput;
@@ -27,7 +29,7 @@ public class movement : MonoBehaviour
     private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
     {
         var player = GameObject.FindGameObjectWithTag("Player");
-        var healthUi = player.GetComponentInChildren<HeartUI>();
+        healthUi = player.GetComponentInChildren<HeartUI>();
         healthUi.UpdateHearts();
 
         var memoryGO = GameObject.FindGameObjectWithTag("memory");
@@ -39,6 +41,8 @@ public class movement : MonoBehaviour
         if (spawName == "HubTeleport") {
             var go = GameObject.Find(spawName);
             transform.position = go.transform.position + Vector3.up* GetComponent<CapsuleCollider>().height/2;
+            healthSO.health = healthSO.maxHealth;
+            healthUi.UpdateHearts();
             return;
         }
         var spawnTransform = door.transform.GetChild(0);
