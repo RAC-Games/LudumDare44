@@ -1108,11 +1108,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: IntroCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 8204321357915619133, guid: 54d9bfa09d5c8504a92995080fc6ccc9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8204321357915619104, guid: 54d9bfa09d5c8504a92995080fc6ccc9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1223,10 +1218,5 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1920676564}
-    - target: {fileID: 8204321358749818669, guid: 54d9bfa09d5c8504a92995080fc6ccc9,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54d9bfa09d5c8504a92995080fc6ccc9, type: 3}
