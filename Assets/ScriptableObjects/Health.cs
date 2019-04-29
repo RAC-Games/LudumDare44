@@ -8,6 +8,7 @@ using UnityEngine;
 public class Health : ScriptableObject
 {
     public int health = 10;
+    public int maxHealth = 15;
 
     public void decreaseHealth(int damageAmount)
     {
