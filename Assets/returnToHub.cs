@@ -10,4 +10,3 @@ public class returnToHub : MonoBehaviour
         SceneManager.LoadScene("Hub_1");
     }
 }
-s
