@@ -95,6 +95,7 @@ public class startBuyScreen : MonoBehaviour
     IEnumerator typeText(string textString, TurnOf turnOf) {
         var charArray = textString.ToCharArray();
         var index = 0;
+        
         textField.text = "";
         if (turnOf == TurnOf.Player)
         {
@@ -106,11 +107,11 @@ public class startBuyScreen : MonoBehaviour
             imageVendor.SetActive(true);
         }
 
-        while (index < charArray.Length)
+        while (index+1 < charArray.Length)
         {
             textField.text = textField.text + charArray[index];
             index++;
-            yield return new WaitForSeconds(.01f);
+            yield return new WaitForSeconds(.005f);
         }
         dialog.currentSpeakerIndex++;
         waitForSpace = true;
