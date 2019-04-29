@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7612879974536502612}
   - component: {fileID: 5477648368619330438}
   - component: {fileID: 1704077403685904318}
+  - component: {fileID: 2038753884133210458}
   m_Layer: 0
   m_Name: BossCircleAttackSingle
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -868,7 +869,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 10
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -921,7 +922,7 @@ ParticleSystem:
     rateOverDistance:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 30
+      scalar: 15
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4724,7 +4725,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 4
   m_CollisionDetection: 2
 --- !u!135 &5477648368619330438
 SphereCollider:
@@ -4757,4 +4758,19 @@ MonoBehaviour:
   count: 0
   force: 0
   splitTime: 0
+  recursive: 0
   isRoot: 0
+--- !u!114 &2038753884133210458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7653049330811447242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55386471b3b1d6248a93dc16c7d1f5e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dmg: 1
+  isFromPlayer: 0

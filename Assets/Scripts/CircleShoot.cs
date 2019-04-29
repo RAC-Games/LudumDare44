@@ -49,7 +49,8 @@ public class CircleShoot : MonoBehaviour
         if (count > 0)
         {
             float step = 360.0f / count;
-            Vector3 dir = Vector3.forward;
+            Vector3 dir = transform.forward;
+            print(dir);
             for (float angle = 0; angle < 360f; angle += step)
             {
                 dir = Quaternion.AngleAxis(step, Vector3.up) * dir;
@@ -63,7 +64,7 @@ public class CircleShoot : MonoBehaviour
                 newCircleShoot.recursive = recursive;
                 if (!recursive)
                 {
-                    Destroy(newCircleShoot.gameObject, splitTime*2.5f);
+                    Destroy(newCircleShoot.gameObject, splitTime*4f);
                 }
             }
         }

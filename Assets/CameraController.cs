@@ -17,22 +17,34 @@ public class CameraController : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         lookAtOffset = GameObject.Find("CameraLookAtOffset").transform;
+        Scroll(0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        float scroll = Input.GetAxis("Mouse ScrollWheel");
-        print("scroll: " + scroll);
-        if(transform.position.y > minHeight && transform.position.y < maxHeight)
+        float scrollAmount = Input.GetAxis("Mouse ScrollWheel");
+        if(transform.position.y >= minHeight && transform.position.y <= maxHeight)
         {
-            print("scrolling");
-            transform.Translate(transform.forward * scroll * speed);
+            if (scrollAmount != 0)
+            {
+                print("scrolling");
+                Scroll(scrollAmount);
+            }
         }
+    }
+
+    void Scroll(float scrollAmount)
+    {
+        transform.Translate(transform.forward * scrollAmount * speed);
+        Vector3 pos = transform.position;
+        pos.y = Mathf.Clamp(pos.y, minHeight, maxHeight);
+        transform.position = pos;
+        transform.LookAt(lookAtOffset);
     }
 
     private void LateUpdate()
     {
-        transform.LookAt(lookAtOffset);
+        //transform.LookAt(lookAtOffset);
     }
 }

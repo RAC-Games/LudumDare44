@@ -23,6 +23,13 @@ public class Fireball : MonoBehaviour
 
     void Explode()
     {
-        Destroy(gameObject);
+        print("Explode");
+        GetComponent<Collider>().enabled = false;
+        GetComponent<MeshRenderer>().enabled = false;
+        foreach(ParticleSystem p in GetComponentsInChildren<ParticleSystem>())
+        {
+            p.Stop();
+        }
+        //Destroy(gameObject);
     }
 }

@@ -256,11 +256,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2049698874425747091}
     m_Modifications:
-    - target: {fileID: 204727010151362967, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
-        type: 3}
-      propertyPath: m_Name
-      value: Particle System
-      objectReference: {fileID: 0}
     - target: {fileID: 204727010151362960, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -315,6 +310,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 204727010151362967, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
+        type: 3}
+      propertyPath: m_Name
+      value: Particle System
       objectReference: {fileID: 0}
     - target: {fileID: 204727010151362961, guid: 0c6448e9f4bb2c04fa123ebb0a5fd116,
         type: 3}

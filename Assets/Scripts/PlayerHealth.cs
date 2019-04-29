@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectile") && !(collision.gameObject.GetComponent<damage>().isFromPlayer))
         {
+            print("projectile collision");
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
 
             if (!isInvincible)

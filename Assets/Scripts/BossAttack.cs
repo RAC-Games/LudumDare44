@@ -12,10 +12,12 @@ public class BossAttack : MonoBehaviour
     float attackFrequency;
     //int hp = 100;
     public BossPhaseSO curPhase;
+    BossHealthbar healthbar;
 
 
     private void Start()
     {
+        healthbar = FindObjectOfType<BossHealthbar>();
         maxHP = GetComponent<enemy>().health;
         circleAttack = GetComponent<CircleShoot>();
         UpdateBossPhase(bossPhases[0]);
@@ -46,6 +48,7 @@ public class BossAttack : MonoBehaviour
 
     public void CheckForPhaseUpdate(float hp)
     {
+        UpdateHealthBar(hp);
         float step = maxHP / bossPhases.Length;
         for(int i = 1; i < bossPhases.Length; i++)
         {
@@ -62,6 +65,11 @@ public class BossAttack : MonoBehaviour
                 break;
             }
         }
+    }
+
+    void UpdateHealthBar(float hp)
+    {
+        healthbar.UpdateHP(hp / maxHP);
     }
 
     void UpdateBossPhase(BossPhaseSO phase)

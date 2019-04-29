@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: bossPhase0
   m_EditorClassIdentifier: 
   count: 4
-  splitTime: 2
+  splitTime: 1
   recursion: 0
-  attackFrequency: 0.2
+  attackFrequency: 0.1
