@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2692ded1ef9bb9d4ba4248320e526d83, type: 3}
-  m_Name: bossPhase5
+  m_Name: bossPhase5r
   m_EditorClassIdentifier: 
-  count: 3
+  count: 5
   splitTime: 1
   recursion: 1
   attackFrequency: 0.7

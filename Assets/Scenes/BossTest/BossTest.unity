@@ -1960,7 +1960,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &755885440
 GameObject:
@@ -2748,7 +2748,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &797163742
 GameObject:
@@ -2781,7 +2781,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 443846772}
 --- !u!114 &797163744
@@ -4303,7 +4303,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 534367677}
 --- !u!114 &1245686075
@@ -5726,7 +5726,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &1259427512
 Mesh:
@@ -12656,7 +12656,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 14
   m_Mesh: {fileID: 1890384188}
 --- !u!114 &1528135807
@@ -15859,16 +15859,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6908215997948761800, guid: 54fbc38ef55d1914186c476b1b241d78,
-        type: 3}
-      propertyPath: spawnDistanceFromCenter
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6908215997948761800, guid: 54fbc38ef55d1914186c476b1b241d78,
-        type: 3}
-      propertyPath: spawnOffset.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6908215997172132683, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
