@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: level4buyDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Welcome back. Got life for more?
+  - text: There aren't many dimensions left... you seem very keen on exploring them
+      all
     turnOf: 1
   - text: I guess so...
     turnOf: 0
-  - text: Very well then ...
+  - text: Enjoy yourself!
     turnOf: 1
   endWithBuyScreen: 1
   currentSpeakerIndex: 0

@@ -7,7 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "health", menuName = "scriptableObjects/health", order = 1)]
 public class Health : ScriptableObject
 {
-    public int health = 10;
+    public int health = 15;
     public int maxHealth = 15;
 
     public void decreaseHealth(int damageAmount)

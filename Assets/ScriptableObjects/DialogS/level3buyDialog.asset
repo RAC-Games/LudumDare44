@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: level3buyDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Welcome back. Got life for more?
+  - text: Welcome again. Still have some life left?
     turnOf: 1
   - text: I guess so...
     turnOf: 0
-  - text: Very well then ...
+  - text: I'm happy to be of assistance.
     turnOf: 1
   endWithBuyScreen: 1
   currentSpeakerIndex: 0

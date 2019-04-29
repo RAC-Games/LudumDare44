@@ -18,7 +18,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Start()
     {
-        healthSO.health = 10;
+        healthSO.health = 15;
     }
 
     private void OnCollisionEnter(Collision collision)

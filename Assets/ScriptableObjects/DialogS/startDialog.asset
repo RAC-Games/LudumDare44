@@ -13,21 +13,22 @@ MonoBehaviour:
   m_Name: startDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Oh no. Not again I am doomed down here. How do I get out of here ...?
+  - text: Oh no. Not again. I am doomed down here. What do I do?
     turnOf: 0
   - text: Probably I only need a big soul to summon a levitate teleport, but I should
-      keep it a secret before someone gets greedy and gets in my way.
+      keep it a secret before someone greedy gets in my way.
     turnOf: 0
   - text: Welcome traveler, I'm Asmodeus, the merchant. What brings you to this ghastly
-      cave?
+      realm?
     turnOf: 1
   - text: I'm... just your average explorer, nothing more mate.
     turnOf: 0
-  - text: There's been many of your kind. If you need anything, I can help you. But
-      beware, my services won't come cheap.
+  - text: There's been many of your kind. If you want access to the adjacent dimensions,
+      I have the key to some of them.
     turnOf: 1
-  - text: To find what you seek, you have to sweep alle the areas. But before you
-      have to buy the access with parts of your little life energy.
+  - text: But beware, my services won't come cheap. You have to buy the access with
+      parts of your little life energy. Maybe you're lucky and find some more on your
+      quests. Or maybe you aren't...
     turnOf: 1
   endWithBuyScreen: 0
   currentSpeakerIndex: 5

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: levelComplete
   m_EditorClassIdentifier: 
   dialogList:
-  - text: Very well. The soul is activated thanks!
+  - text: You want to come back?
     turnOf: 1
-  - text: I will bring you back and you can start the next room!
+  - text: I will bring you to my store so you can keep adventuring!
     turnOf: 1
   endWithBuyScreen: 0
   currentSpeakerIndex: 0

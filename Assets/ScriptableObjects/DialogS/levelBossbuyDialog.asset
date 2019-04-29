@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: levelBossbuyDialog
   m_EditorClassIdentifier: 
   dialogList:
-  - text: The last area is in front of you!
+  - text: 
     turnOf: 1
   - text: yeah...
     turnOf: 0
