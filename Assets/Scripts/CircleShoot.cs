@@ -50,7 +50,6 @@ public class CircleShoot : MonoBehaviour
         {
             float step = 360.0f / count;
             Vector3 dir = transform.forward;
-            print(dir);
             for (float angle = 0; angle < 360f; angle += step)
             {
                 dir = Quaternion.AngleAxis(step, Vector3.up) * dir;

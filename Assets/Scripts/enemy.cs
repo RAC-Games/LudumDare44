@@ -57,7 +57,6 @@ public class enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        print("collided");
         if (collision.collider.CompareTag("Projectile"))
         {
             var dmgScript = collision.collider.GetComponent<damage>();

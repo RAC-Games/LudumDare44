@@ -16,7 +16,9 @@ public class movement : MonoBehaviour
 
     public float speed;
     // Start is called before the first frame update
+
     Vector3 offset;
+
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -77,6 +79,11 @@ public class movement : MonoBehaviour
             }
 
         }
+        Vector3 velocity = rb.velocity;
+        print(velocity);
+        velocity.y = Mathf.Clamp(velocity.y, -99999, 0);
+        rb.velocity = velocity;
+        print("clamped:"+rb.velocity);
     }
 
     void LateUpdate()
