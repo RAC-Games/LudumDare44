@@ -50,7 +50,7 @@ public class startBuyScreen : MonoBehaviour
                         buyButtons.SetActive(true);
                         waitForSpace = false;
                         dropDown.SetActive(true);
-                        progress.Progress();
+                        //progress.Progress();
                     }
                     else {
                         disableDialog();
@@ -166,6 +166,21 @@ public class startBuyScreen : MonoBehaviour
             health.decreaseMaxHealth(3);
             progress.doorBoss = true;
         }
+
+        //switch (progress.finishedLevelCount)
+        //{
+        //    case 1:
+        //        progress.door1 = true;
+        //        //    health.decreaseHealth(1);
+        //        //    health.decreaseMaxHealth(1);
+        //        break;
+        //    case 2:
+        //        break;
+        //    case 3:
+        //        break;
+        //    case 4:
+        //        break;
+        //}
 
         var player = GameObject.FindGameObjectWithTag("Player");
         var healthUi = player.GetComponentInChildren<HeartUI>();
