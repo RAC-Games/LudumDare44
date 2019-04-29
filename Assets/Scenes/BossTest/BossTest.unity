@@ -1177,6 +1177,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -33.94995
       objectReference: {fileID: 0}
+    - target: {fileID: 5134497405238607819, guid: f7f2f0eb26de1174793f7877ea1d007b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2121546722, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f7f2f0eb26de1174793f7877ea1d007b, type: 3}
@@ -1261,6 +1266,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VendorBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 6908215997179315353, guid: 54fbc38ef55d1914186c476b1b241d78,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4766a3b1455ab494f810ae4a2ba2ee96, type: 2}
     - target: {fileID: 6908215997948761807, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1321,6 +1331,11 @@ PrefabInstance:
       propertyPath: spawnDistanceFromCenter
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6908215997948761800, guid: 54fbc38ef55d1914186c476b1b241d78,
+        type: 3}
+      propertyPath: spawnOffset.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6908215997948761805, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
       propertyPath: hurt.m_PersistentCalls.m_Calls.Array.size
@@ -1334,7 +1349,7 @@ PrefabInstance:
     - target: {fileID: 6908215997948761805, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
       propertyPath: followDistance
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 6908215997948761805, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
@@ -1369,7 +1384,17 @@ PrefabInstance:
     - target: {fileID: 6908215997948761805, guid: 54fbc38ef55d1914186c476b1b241d78,
         type: 3}
       propertyPath: attackDistance
-      value: 10
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908215997172132683, guid: 54fbc38ef55d1914186c476b1b241d78,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.20631804
+      objectReference: {fileID: 0}
+    - target: {fileID: 6908215997172132683, guid: 54fbc38ef55d1914186c476b1b241d78,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.034340918
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54fbc38ef55d1914186c476b1b241d78, type: 3}
