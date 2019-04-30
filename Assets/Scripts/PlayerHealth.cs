@@ -26,20 +26,14 @@ public class PlayerHealth : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Projectile") && !(collision.gameObject.GetComponent<damage>().isFromPlayer))
         {
-            print("projectile collision");
             int dmg = collision.gameObject.GetComponent<damage>().dmg;
 
             if (!isInvincible)
             {
                 healthSO.decreaseHealth(dmg);
-                if (healthSO.health <= 0 && !animationPlayed)
+                if (healthSO.health <= 0 )
                 {
-                    deathEvent.Invoke();
-                    anim.SetTrigger("died");
-                    animationPlayed = true;
-                    StartCoroutine(revive());
-                    FindObjectOfType<sceneTransition>().teleportToHub();
-                    
+                    deathEvent.Invoke();  
                 }
                 else
                 {
@@ -53,6 +47,17 @@ public class PlayerHealth : MonoBehaviour
             
         }
         
+    }
+
+    public void Death()
+    {
+        if (!animationPlayed)
+        {
+            print("death");
+            anim.SetTrigger("died");
+            animationPlayed = true;
+            StartCoroutine(revive());
+        }
     }
 
     
@@ -74,7 +79,9 @@ public class PlayerHealth : MonoBehaviour
 
     IEnumerator revive()
     {
-        yield return new WaitForSeconds(.6f);
+        yield return new WaitForSeconds(1.8f);
         anim.SetTrigger("revived");
+        animationPlayed = false;
+        FindObjectOfType<sceneTransition>().teleportToHub();
     }
 }

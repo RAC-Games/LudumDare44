@@ -11,8 +11,6 @@ public class progressSO : ScriptableObject
     public bool door3;
     public bool door4;
     public bool doorBoss;
-    public int finishedLevels;
-    public bool[] levels = new bool[4];
 
     public void setDoorHub(bool val) {
         doorHub = val;
@@ -38,26 +36,6 @@ public class progressSO : ScriptableObject
         doorBoss = val;
     }
 
-    public void FinishedLevel(int levelID)
-    {
-        if(levelID < 0&& levelID < levels.Length)
-        {
-            levels[levelID] = true;
-        }
-    }
-
-    public int finishedLevelCount()
-    {
-        int i = 0;
-        foreach(bool done in levels)
-        {
-            if (done)
-            {
-                i++;
-            }
-        }
-        return i;
-    }
 
 
 

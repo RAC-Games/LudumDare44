@@ -34,7 +34,6 @@ public class HeartOrb : MonoBehaviour
         startPos = transform.position;
         maxPointTime = (timeStart + flyDuration) * distancePercentageMaximum;
         preMaxPointTime = (timeStart + flyDuration) * distancePercentageMaximumBegin;
-        Debug.Log(flyDuration);
 
     }
 

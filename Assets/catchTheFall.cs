@@ -19,18 +19,20 @@ public class catchTheFall : MonoBehaviour
             var memory = memoryObj.GetComponent<transitionMemory>();
             memory.doTransition = false;
             var spawName = memory.nextDoor;
-            var door = GameObject.Find(spawName);
-            Player.transform.position = door.transform.GetChild(0).position;
+            
+
             playerHealthSO.decreaseHealth(1);
             if (playerHealthSO.health > 0)
             {
                 Player.GetComponent<PlayerHealth>().hurtEvent.Invoke();
-               
+                var door = GameObject.Find(spawName);
+                Player.transform.position = door.transform.GetChild(0).position;
             }
             else
             {
                 
                 Player.GetComponent<PlayerHealth>().deathEvent.Invoke();
+                
             }
         }
     }
