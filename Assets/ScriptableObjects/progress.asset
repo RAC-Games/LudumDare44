@@ -16,5 +16,5 @@ MonoBehaviour:
   door1: 1
   door2: 1
   door3: 1
-  door4: 1
+  door4: 0
   doorBoss: 1

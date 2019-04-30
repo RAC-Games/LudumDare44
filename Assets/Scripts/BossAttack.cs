@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossAttack : MonoBehaviour
 {
@@ -89,5 +90,21 @@ public class BossAttack : MonoBehaviour
         circleAttack.splitTime = phase.splitTime;
         circleAttack.recursive = phase.recursion;
         attackFrequency = circleAttack.getCooldownDuration() * phase.attackFrequency;
+    }
+
+    public void OnDeath()
+    {
+        StartCoroutine(showEndScreen());
+    }
+
+    IEnumerator showEndScreen()
+    {
+        yield return new WaitForSeconds(1.8f);
+        //SceneManager.LoadScene(0);
+        foreach(Image img in healthbar.transform.GetComponentsInChildren<Image>())
+        {
+            img.enabled = true;
+        }
+        healthbar.transform.GetComponentInChildren<Text>().enabled = true;
     }
 }
